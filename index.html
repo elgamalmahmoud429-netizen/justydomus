@@ -1,13 +1,133 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="it" dir="ltr" id="html-root">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Justy Domus</title>
+<title>Justy Domus - Diritto • Immobili • Aste</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>أهلاً بك في موقع Justy Domus</h1>
-<p>هذا الموقع قيد الإنشاء وسيتم إطلاقه قريباً.</p>
+
+<header class="top-bar">
+<div class="container lang-container">
+<span class="brand-subtitle">Milano, Italia 🇮🇹</span>
+<div class="language-selector">
+<label for="lang-select" id="lang-label">Language / Lingua / اللغة:</label>
+<select id="lang-select" onchange="changeLanguage(this.value)">
+<option value="it">Italiano</option>
+<option value="en">English</option>
+<option value="ar">العربية</option>
+</select>
+</div>
+</div>
+</header>
+
+<main class="main-content">
+<div class="container text-center">
+<div class="logo-wrapper">
+<img src="logo.png" alt="Justy Domus Logo" class="main-logo">
+</div>
+
+<h1 class="site-title" data-translate="title">Justy Domus</h1>
+<p class="site-tagline" data-translate="tagline">DIRITTO • IMMOBILI • ASTE</p>
+<p class="site-location" data-translate="location">MILANO, ITALIA</p>
+
+<section class="services-preview">
+<div class="service-card">
+<h3 data-translate="s1_title">Consulenza Legale</h3>
+<p data-translate="s1_desc">Diritto Civile, Penale, Amministrativo, Famiglia, Successioni e Commerciale.</p>
+</div>
+<div class="service-card">
+<h3 data-translate="s2_title">Tutela Della Persona</h3>
+<p data-translate="s2_desc">Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.</p>
+</div>
+<div class="service-card">
+<h3 data-translate="s3_title">Contenzioso e Litigi</h3>
+<p data-translate="s3_desc">Assistenza e difesa in ogni sede giudiziaria.</p>
+</div>
+<div class="service-card">
+<h3 data-translate="s4_title">Immobili Real Estate</h3>
+<p data-translate="s4_desc">Consulenza immobiliare, compravendite, locazioni e investimenti.</p>
+</div>
+<div class="service-card">
+<h3 data-translate="s5_title">Aste Immobiliari</h3>
+<p data-translate="s5_desc">Partecipazione e gestione aste giudiziarie e stragiudiziarie.</p>
+</div>
+</section>
+</div>
+</main>
+
+<script>
+const translations = {
+it: {
+langLabel: "Lingua:",
+title: "Justy Domus",
+tagline: "DIRITTO • IMMOBILI • ASTE",
+location: "MILANO, ITALIA",
+s1_title: "Consulenza Legale",
+s1_desc: "Diritto Civile, Penale, Amministrativo, Famiglia, Successioni e Commerciale.",
+s2_title: "Tutela Della Persona",
+s2_desc: "Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.",
+s3_title: "Contenzioso e Litigi",
+s3_desc: "Assistenza e difesa in ogni sede giudiziaria.",
+s4_title: "Immobili Real Estate",
+s4_desc: "Consulenza immobiliare, compravendite, locazioni e investimenti.",
+s5_title: "Aste Immobiliari",
+s5_desc: "Partecipazione e gestione aste giudiziarie e stragiudiziarie."
+},
+en: {
+langLabel: "Language:",
+title: "Justy Domus",
+tagline: "LAW • REAL ESTATE • AUCTIONS",
+location: "MILAN, ITALY",
+s1_title: "Legal Consulting",
+s1_desc: "Civil, Criminal, Administrative, Family, Succession, and Commercial Law.",
+s2_title: "Personal Protection",
+s2_desc: "Family Law, Separations, Divorces, Custody, Minors.",
+s3_title: "Litigation & Disputes",
+s3_desc: "Assistance and defense in all judicial venues.",
+s4_title: "Real Estate",
+s4_desc: "Real estate consulting, sales, rentals, and investments.",
+s5_title: "Real Estate Auctions",
+s5_desc: "Participation and management of judicial and extrajudicial auctions."
+},
+ar: {
+langLabel: "اللغة:",
+title: "جستي دوموس",
+tagline: "قانون • عقارات • مزادات",
+location: "ميلانو، إيطاليا",
+s1_title: "استشارات قانونية",
+s1_desc: "القانون المدني، الجنائي، الإداري، الأسرة، التركات والقانون التجاري.",
+s2_title: "حماية الأسرة والأفراد",
+s2_desc: "قانون الأسرة، الانفصال، الطلاق، الحضانة والقاصرين.",
+s3_title: "النزاعات والقضايا",
+s3_desc: "المساعدة والدفاع في جميع الجهات القضائية.",
+s4_title: "العقارات",
+s4_desc: "استشارات عقارية، بيع وشراء، إيجارات واستثمارات.",
+s5_title: "مزادات عقارية",
+s5_desc: "المشاركة وإدارة المزادات القضائية وغير القضائية."
+}
+};
+
+function changeLanguage(lang) {
+const root = document.getElementById('html-root');
+if (lang === 'ar') {
+root.setAttribute('dir', 'rtl');
+root.setAttribute('lang', 'ar');
+} else {
+root.setAttribute('dir', 'ltr');
+root.setAttribute('lang', lang);
+}
+
+document.querySelectorAll('[data-translate]').forEach(element => {
+const key = element.getAttribute('data-translate');
+if (translations[lang][key]) {
+element.textContent = translations[lang][key];
+}
+});
+document.getElementById('lang-label').textContent = translations[lang].langLabel;
+}
+</script>
 </body>
 </html>
