@@ -12,15 +12,16 @@ Studio Europa:
 
 <header class="top-bar">
 <div class="container lang-container">
-<a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="brand_subtitle">Justy Domus</a>
+<a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="brand_subtitle">JUSTY DOMUS</a>
 <div class="top-right-controls">
 <a href="index.html" class="nav-btn" style="color: #d4af37;" data-translate="nav_home">Home</a>
 <a href="about.html" class="nav-btn" data-translate="nav_about">About Us</a>
 <a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
+<a href="results.html" class="nav-btn" data-translate="nav_results">Our Results</a>
 <a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
 
 <div class="language-selector">
-<label for="lang-select" id="lang-label">Language:</label>
+<label for="lang-select" id="lang-label" data-translate="lang_label">Language:</label>
 <select id="lang-select" onchange="changeLanguage(this.value)">
 <option value="it" id="opt-it">Italiano</option>
 <option value="en" id="opt-en">English</option>
@@ -40,18 +41,19 @@ Studio Europa:
 <h1 class="site-title">Justy Domus</h1>
 <p class="site-tagline" data-translate="site_tagline">Soluzioni Immobiliari e Servizi di Qualità</p>
 
+<!-- الخدمات الثلاثة الرئيسية في الصفحة الرئيسية -->
 <div class="services-grid">
 <div class="service-card">
-<h3 data-translate="service_1_title">Compra e Vendita</h3>
-<p data-translate="service_1_desc">Assistenza completa per l'acquisto e la vendita di immobili a Milano e provincia.</p>
+<h3 data-translate="service_1_title">Regolarizzazione e Permessi</h3>
+<p data-translate="service_1_desc">Assistenza completa per il تقنين أوضاع (sanatoria) in Italia, rinnovo dei permessi di soggiorno e pratiche burocratiche.</p>
 </div>
 <div class="service-card">
-<h3 data-translate="service_2_title">Affitti e Gestioni</h3>
-<p data-translate="service_2_desc">Gestione professionale di appartamenti e contratti di locazione.</p>
+<h3 data-translate="service_2_title">Immobili e Aste</h3>
+<p data-translate="service_2_desc">Consulenza specializzata nel settore immobiliare, compravendita e partecipazione sicura alle aste giudiziarie.</p>
 </div>
 <div class="service-card">
-<h3 data-translate="service_3_title">Consulenza</h3>
-<p data-translate="service_3_desc">Supporto tecnico, legale e finanziario per ogni vostra esigenza immobiliare.</p>
+<h3 data-translate="service_3_title">Gestione Aziendale</h3>
+<p data-translate="service_3_desc">Servizi professionali per la creazione, gestione e amministrazione d'imprese e società in Italia.</p>
 </div>
 </div>
 </div>
@@ -60,45 +62,47 @@ Studio Europa:
 <script>
 const translations = {
 it: {
-langLabel: "Lingua:",
+lang_label: "Lingua:",
 opt_it: "Italiano",
 opt_en: "Inglese",
 opt_ar: "Arabo",
-brand_subtitle: "Justy Domus",
+brand_subtitle: "JUSTY DOMUS",
 nav_home: "Home",
 nav_about: "Chi Siamo",
 address_btn: "Indirizzi",
+nav_results: "I Nostri Risultati",
 contact_btn: "Contatti",
 site_tagline: "Soluzioni Immobiliari e Servizi di Qualità",
-service_1_title: "Compra e Vendita",
-service_1_desc: "Assistenza completa per l'acquisto e la vendita di immobili a Milano e provincia.",
-service_2_title: "Affitti e Gestioni",
-service_2_desc: "Gestione professionale di appartamenti e contratti di locazione.",
-service_3_title: "Consulenza",
-service_3_desc: "Supporto tecnico, legale e finanziario per ogni vostra esigenza immobiliare."
-},
-en: {
-langLabel: "Language:",
-opt_it: "Italian",
-opt_en: "English",
+service_1_title: "Regolarizzazione e Permessi",
+service_1_desc: "Assistenza completa per la sanatoria in Italia, rinnovo dei permessi di soggiorno e pratiche burocratiche.",
+service_2_title: "Immobili e Aste",
 
 Studio Europa:
+service_2_desc: "Consulenza specializzata nel settore immobiliare, compravendita e partecipazione sicura alle aste giudiziarie.",
+service_3_title: "Gestione Aziendale",
+service_3_desc: "Servizi professionali per la creazione, gestione e amministrazione d'imprese e società in Italia."
+},
+en: {
+lang_label: "Language:",
+opt_it: "Italian",
+opt_en: "English",
 opt_ar: "Arabic",
-brand_subtitle: "Justy Domus",
+brand_subtitle: "JUSTY DOMUS",
 nav_home: "Home",
 nav_about: "About Us",
 address_btn: "Addresses",
+nav_results: "Our Results",
 contact_btn: "Contact Us",
 site_tagline: "Quality Real Estate Solutions & Services",
-service_1_title: "Buying & Selling",
-service_1_desc: "Complete assistance for the purchase and sale of properties in Milan and surroundings.",
-service_2_title: "Rentals & Management",
-service_2_desc: "Professional management of apartments and lease agreements.",
-service_3_title: "Consulting",
-service_3_desc: "Technical, legal, and financial support for all your real estate needs."
+service_1_title: "Regularization & Permits",
+service_1_desc: "Complete assistance for regularization in Italy, residence permit renewals, and related procedures.",
+service_2_title: "Real Estate & Auctions",
+service_2_desc: "Specialized consultancy in the real estate sector, buying/selling, and secure participation in judicial auctions.",
+service_3_title: "Corporate Management",
+service_3_desc: "Professional services for the establishment, management, and administration of businesses and companies in Italy."
 },
 ar: {
-langLabel: "اللغة:",
+lang_label: "اللغة:",
 opt_it: "الإيطالية",
 opt_en: "الإنجليزية",
 opt_ar: "العربية",
@@ -106,14 +110,15 @@ brand_subtitle: "جستي دوموس",
 nav_home: "الرئيسية",
 nav_about: "من نحن",
 address_btn: "العناوين",
+nav_results: "أعمالنا ونتائجنا",
 contact_btn: "تواصل معنا",
 site_tagline: "حلول عقارية وخدمات عالية الجودة",
-service_1_title: "البيع والشراء",
-service_1_desc: "مساعدة متكاملة لبيع وشراء العقارات في ميلانو والمناطق المجاورة.",
-service_2_title: "الإيجارات والإدارة",
-service_2_desc: "إدارة احترافية للشقق وعقود الإيجار.",
-service_3_title: "الاستشارات",
-service_3_desc: "دعم فني وقانوني ومالي لجميع احتياجاتك العقارية."
+service_1_title: "تقنين الأوضاع وتجديد الإقامات",
+service_1_desc: "مساعدة شاملة لتقنين الأوضاع (Sanatoria) في إيطاليا، تجديد تصاريح الإقامة، وإنجاز المعاملات البيروقراطية.",
+service_2_title: "العقارات والمزادات",
+service_2_desc: "استشارات متخصصة في قطاع العقارات، البيع والشراء، والمشاركة الآمنة في المزادات القضائية والعقارية.",
+service_3_title: "إدارة الشركات",
+service_3_desc: "خدمات احترافية لتأسيس وإدارة وتسيير الشركات والأعمال التجارية في إيطاليا بدعم قانوني وإداري كامل."
 }
 };
 
@@ -136,7 +141,7 @@ element.innerHTML = translations[lang][key];
 
 const label = document.getElementById('lang-label');
 if (label && translations[lang]) {
-label.textContent = translations[lang].langLabel;
+label.textContent = translations[lang].lang_label;
 }
 
 document.getElementById('opt-it').textContent = translations[lang].opt_it;
@@ -153,8 +158,4 @@ changeLanguage(savedLang);
 };
 </script>
 </body>
-</html><a href="index.html" class="nav-btn" data-translate="nav_home">Home</a>
-<a href="about.html" class="nav-btn" data-translate="nav_about">About Us</a>
-<a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
-<a href="results.html" class="nav-btn" data-translate="nav_results">Our Results</a>
-<a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
+</html>
