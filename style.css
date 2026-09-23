@@ -178,4 +178,285 @@ text-align: center;
 .top-right-controls {
 justify-content: center;
 }
+}Studio Europa:
+/* تنسيقات صفحة About الاحترافية */
+.about-hero {
+padding: 60px 20px;
+background-color: #fcfbfa;
+border-bottom: 1px solid #e6e2dd;
+}
+
+.hero-headline {
+font-size: 1.8rem;
+color: #1a1a1a;
+font-weight: 700;
+margin: 15px 0;
+}
+
+.hero-sub {
+font-size: 1.1rem;
+color: #555;
+max-width: 800px;
+margin: 0 auto 30px auto;
+font-style: italic;
+line-height: 1.6;
+}
+
+.hero-buttons {
+margin-top: 20px;
+}
+
+.about-section {
+padding: 60px 20px;
+background-color: #fff;
+}
+
+.section-title {
+font-family: 'Playfair Display', serif;
+font-size: 2.2rem;
+color: #1a1a1a;
+margin-bottom: 30px;
+}
+
+.about-text-box {
+max-width: 900px;
+margin: 0 auto;
+text-align: center;
+font-size: 1.15rem;
+line-height: 1.8;
+color: #444;
+}
+
+.about-text-box p {
+margin-bottom: 20px;
+}
+
+.highlight-text {
+font-weight: 600;
+color: #d4af37;
+margin-top: 20px;
+}
+
+.services-detailed-section {
+padding: 60px 20px;
+background-color: #fcfbfa;
+}
+
+/* بطاقات الخدمات التفصيلية مع قوائم النقاط */
+.service-card ul {
+list-style-type: none;
+padding: 0;
+margin-top: 15px;
+text-align: left;
+}
+
+[dir="rtl"] .service-card ul {
+text-align: right;
+}
+
+.service-card ul li {
+position: relative;
+padding-left: 20px;
+margin-bottom: 8px;
+color: #555;
+font-size: 0.95rem;
+line-height: 1.5;
+}
+
+[dir="rtl"] .service-card ul li {
+padding-left: 0;
+padding-right: 20px;
+}
+
+.service-card ul li::before {
+content: "•";
+color: #d4af37;
+font-weight: bold;
+position: absolute;
+left: 0;
+}
+
+[dir="rtl"] .service-card ul li::before {
+left: auto;
+right: 0;
+}
+
+/* قسم القيم (Why Us) */
+.why-section {
+padding: 60px 20px;
+background-color: #fff;
+}
+
+.values-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 30px;
+margin-top: 40px;
+}
+
+.value-card {
+background: #fcfbfa;
+border: 1px solid #e6e2dd;
+padding: 30px 20px;
+border-radius: 6px;
+transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+transform: translateY(-5px);
+border-color: #d4af37;
+}
+
+.value-card h4 {
+font-size: 1.2rem;
+color: #1a1a1a;
+margin-bottom: 10px;
+}
+
+.value-card p {
+color: #666;
+font-size: 0.95rem;
+line-height: 1.5;
+}
+
+/* منهجية العمل (Timeline) */
+.approach-section {
+padding: 60px 20px;
+background-color: #fcfbfa;
+}
+
+.timeline {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 30px;
+margin-top: 40px;
+}
+
+.timeline-item {
+background: #fff;
+border: 1px solid #e6e2dd;
+padding: 30px 20px;
+border-radius: 6px;
+position: relative;
+}
+
+.step-num {
+display: inline-block;
+font-family: 'Playfair Display', serif;
+font-size: 1.5rem;
+font-weight: bold;
+color: #d4af37;
+margin-bottom: 15px;
+}
+
+.timeline-item h4 {
+font-size: 1.2rem;
+color: #1a1a1a;
+margin-bottom: 10px;
+}
+
+.timeline-item p {
+color: #666;
+font-size: 0.95rem;
+}
+
+/* شبكة المهنيين */
+.network-section {
+padding: 40px 20px;
+background-color: #fff;
+}
+
+.network-box {
+max-width: 800px;
+margin: 0 auto;
+padding: 25px;
+border-left: 3px solid #d4af37;
+background-color: #fcfbfa;
+text-align: center;
+font-style: italic;
+color: #555;
+font-size: 1.05rem;
+}
+
+[dir="rtl"] .network-box {
+border-left: none;
+border-right: 3px solid #d4af37;
+}
+
+/* الـ CTA النهائي */
+.final-cta {
+padding: 80px 20px;
+background-color: #1a1a1a;
+color: #fff;
+}
+
+.final-cta h2 {
+font-family: 'Playfair Display', serif;
+font-size: 2.5rem;
+color: #d4af37;
+margin-bottom: 20px;
+}
+
+.final-cta p {
+color: #ccc;
+max-width: 750px;
+margin: 0 auto;
+font-size: 1.1rem;
+line-height: 1.6;
+}
+
+/* الفوتر الاحترافي */
+.site-footer {
+background-color: #111;
+color: #aaa;
+padding: 50px 0 20px 0;
+border-top: 2px solid #d4af37;
+}
+
+.footer-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 40px;
+
+Studio Europa:
+margin-bottom: 30px;
+}
+
+.footer-col h3 {
+color: #d4af37;
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+.footer-col h4 {
+color: #fff;
+font-size: 1.1rem;
+margin-bottom: 15px;
+}
+
+.footer-col ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-col ul li {
+margin-bottom: 8px;
+font-size: 0.95rem;
+}
+
+.footer-col ul li a {
+color: #aaa;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+color: #d4af37;
+}
+
+.footer-bottom {
+border-top: 1px solid #222;
+padding-top: 20px;
+font-size: 0.9rem;
+color: #777;
 }
