@@ -13,6 +13,10 @@ Studio Europa:
 <header class="top-bar">
 <div class="container lang-container">
 <span class="brand-subtitle">Milano, Italia 🇮🇹</span>
+<div class="top-right-controls">
+<!-- زر التواصل المترجم في الشريط العلوي -->
+<a href="#contact-section" class="nav-contact-btn" data-translate="contact_title">Contatti</a>
+
 <div class="language-selector">
 <label for="lang-select" id="lang-label">Language:</label>
 <select id="lang-select" onchange="changeLanguage(this.value)">
@@ -20,6 +24,7 @@ Studio Europa:
 <option value="en">English</option>
 <option value="ar">العربية</option>
 </select>
+</div>
 </div>
 </div>
 </header>
@@ -59,10 +64,10 @@ Studio Europa:
 </div>
 </main>
 
-<!-- قسم التواصل الجديد -->
-<footer class="site-footer">
+<!-- قسم بيانات التواصل السفلي -->
+<footer id="contact-section" class="site-footer">
 <div class="container footer-content">
-<h3 data-translate="contact_title">Contatti / Contact Us / تواصل معنا</h3>
+<h3 data-translate="contact_title">Contatti</h3>
 <div class="contact-info">
 <p>📧 Email: <a href="mailto:justydomus@gmail.com">justydomus@gmail.com</a></p>
 <p>📞 Phone: <a href="tel:+393474364053">+39 347 436 4053</a></p>
@@ -80,12 +85,12 @@ location: "MILANO, ITALIA",
 s1_title: "Consulenza Legale",
 s1_desc: "Diritto Civile, Penale, Amministrativo, Famiglia, Successioni e Commerciale.",
 s2_title: "Tutela Della Persona",
+
+Studio Europa:
 s2_desc: "Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.",
 s3_title: "Contenzioso e Litigi",
 s3_desc: "Assistenza e difesa in ogni sede giudiziaria.",
 s4_title: "Immobili Real Estate",
-
-Studio Europa:
 s4_desc: "Consulenza immobiliare, compravendite, locazioni e investimenti.",
 s5_title: "Aste Immobiliari",
 s5_desc: "Partecipazione e gestione aste giudiziarie e stragiudiziarie.",
