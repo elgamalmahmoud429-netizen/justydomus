@@ -79,7 +79,7 @@ cursor: pointer;
 font-family: inherit;
 }
 
-/* الشعار بعرض الشاشة بالكامل 100% بدون هوامش */
+/* الشعار بعرض الشاشة بالكامل مع إظهار الصورة كاملة دون قص */
 .main-content {
 padding: 0 0 40px 0;
 }
@@ -87,18 +87,21 @@ padding: 0 0 40px 0;
 .full-width-logo-container {
 width: 100vw;
 margin-left: calc(-50vw + 50%);
-background-color: #1a1a1a;
+background-color: #1a1a1a; /* خلفية متناسقة مع الهيدر */
 text-align: center;
 margin-bottom: 40px;
+padding: 10px 0;
 overflow: hidden;
 }
 
 .full-screen-logo {
 width: 100%;
-max-height: 650px;
+max-width: 1350px;
 height: auto;
-object-fit: cover; /* ليمتد الشعار ويملأ المساحة العرضية تماماً */
+max-height: 500px;
+object-fit: contain; /* يحافظ على عرض اللوجو كاملاً من أعلى ومن أسفل دون أي قص */
 display: block;
+margin: 0 auto;
 }
 
 .site-title {
