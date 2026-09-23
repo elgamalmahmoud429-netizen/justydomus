@@ -4,7 +4,7 @@ Studio Europa:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Justy Domus - Diritto • Immobili • Aste</title>
+<title>Justy Domus - Real Estate & Services</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,15 +12,11 @@ Studio Europa:
 
 <header class="top-bar">
 <div class="container lang-container">
-<span class="brand-subtitle">Milano, Italia 🇮🇹</span>
+<span class="brand-subtitle" data-translate="brand_subtitle">Immobiliare & Servizi</span>
 <div class="top-right-controls">
-<!-- زر ينتقل لصفحة العناوين المستقلة -->
 <a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
-
-<!-- زر ينتقل لصفحة التواصل المستقلة -->
 <a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
 
-<!-- قائمة تغيير اللغة -->
 <div class="language-selector">
 <label for="lang-select" id="lang-label">Language:</label>
 <select id="lang-select" onchange="changeLanguage(this.value)">
@@ -35,97 +31,73 @@ Studio Europa:
 
 <main class="main-content">
 <div class="container text-center">
-<!-- الشعار بحجم كبير جداً وبارز -->
-<div class="logo-wrapper-fullscreen">
-<img src="logo.png" alt="Justy Domus Logo" class="fullscreen-logo">
+<!-- الشعار بحجم كبير ومناسب -->
+<div class="logo-container" style="margin-bottom: 20px;">
+<img src="logo.png" alt="Justy Domus Logo" class="main-logo" style="max-width: 220px; height: auto;">
 </div>
 
-<h1 class="site-title" data-translate="title">Justy Domus</h1>
-<p class="site-tagline" data-translate="tagline">DIRITTO • IMMOBILI • ASTE</p>
-<p class="site-location" data-translate="location">MILANO, ITALIA</p>
+<h1 class="site-title">Justy Domus</h1>
+<p class="site-tagline" data-translate="site_tagline">Soluzioni Immobiliari e Servizi di Qualità</p>
 
-<section class="services-preview">
+<div class="services-grid" style="margin-top: 40px;">
 <div class="service-card">
-<h3 data-translate="s1_title">Consulenza Legale</h3>
-<p data-translate="s1_desc">Diritto Civile, Penale, Amministrativo, Famiglia, Successioni e Commerciale.</p>
+<h3 data-translate="service_1_title">Compra e Vendita</h3>
+<p data-translate="service_1_desc">Assistenza completa per l'acquisto e la vendita di immobili a Milano e provincia.</p>
 </div>
 <div class="service-card">
-<h3 data-translate="s2_title">Tutela Della Persona</h3>
-<p data-translate="s2_desc">Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.</p>
+<h3 data-translate="service_2_title">Affitti e Gestioni</h3>
+<p data-translate="service_2_desc">Gestione professionale di appartamenti e contratti di locazione.</p>
 </div>
 <div class="service-card">
-<h3 data-translate="s3_title">Contenzioso e Litigi</h3>
-<p data-translate="s3_desc">Assistenza e difesa in ogni sede giudiziaria.</p>
+<h3 data-translate="service_3_title">Consulenza</h3>
+<p data-translate="service_3_desc">Supporto tecnico, legale e finanziario per ogni vostra esigenza immobiliare.</p>
 </div>
-<div class="service-card">
-<h3 data-translate="s4_title">Immobili Real Estate</h3>
-<p data-translate="s4_desc">Consulenza immobiliare, compravendite, locazioni e investimenti.</p>
 </div>
-<div class="service-card">
-<h3 data-translate="s5_title">Aste Immobiliari</h3>
-<p data-translate="s5_desc">Partecipazione e gestione aste giudiziarie e stragiudiziarie.</p>
-</div>
-</section>
 </div>
 </main>
 
 <script>
 const translations = {
 it: {
-langLabel: "Language:",
-title: "Justy Domus",
-tagline: "DIRITTO • IMMOBILI • ASTE",
-location: "MILANO, ITALIA",
+langLabel: "Lingua:",
+brand_subtitle: "Immobiliare & Servizi",
 address_btn: "Indirizzi",
 contact_btn: "Contatti",
-s1_title: "Consulenza Legale",
-s1_desc: "Diritto Civile, Penale, Amministrativo, Famiglia, Successioni e Commerciale.",
-s2_title: "Tutela Della Persona",
-s2_desc: "Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.",
-s3_title: "Contenzioso e Litigi",
-
-Studio Europa:
-s3_desc: "Assistenza e difesa in ogni sede giudiziaria.",
-s4_title: "Immobili Real Estate",
-s4_desc: "Consulenza immobiliare, compravendite, locazioni e investimenti.",
-s5_title: "Aste Immobiliari",
-s5_desc: "Partecipazione e gestione aste giudiziarie e stragiudiziarie."
+site_tagline: "Soluzioni Immobiliari e Servizi di Qualità",
+service_1_title: "Compra e Vendita",
+service_1_desc: "Assistenza completa per l'acquisto e la vendita di immobili a Milano e provincia.",
+service_2_title: "Affitti e Gestioni",
+service_2_desc: "Gestione professionale di appartamenti e contratti di locazione.",
+service_3_title: "Consulenza",
+service_3_desc: "Supporto tecnico, legale e finanziario per ogni vostra esigenza immobiliare."
 },
 en: {
 langLabel: "Language:",
-title: "Justy Domus",
-tagline: "LAW • REAL ESTATE • AUCTIONS",
-location: "MILAN, ITALY",
+brand_subtitle: "Real Estate & Services",
 address_btn: "Addresses",
 contact_btn: "Contact Us",
-s1_title: "Legal Consulting",
-s1_desc: "Civil, Criminal, Administrative, Family, Succession, and Commercial Law.",
-s2_title: "Personal Protection",
-s2_desc: "Family Law, Separations, Divorces, Custody, Minors.",
-s3_title: "Litigation & Disputes",
-s3_desc: "Assistance and defense in all judicial venues.",
-s4_title: "Real Estate",
-s4_desc: "Real estate consulting, sales, rentals, and investments.",
-s5_title: "Real Estate Auctions",
-s5_desc: "Participation and management of judicial and extrajudicial auctions."
+site_tagline: "Quality Real Estate Solutions & Services",
+service_1_title: "Buying & Selling",
+service_1_desc: "Complete assistance for the purchase and sale of properties in Milan and surroundings.",
+
+Studio Europa:
+service_2_title: "Rentals & Management",
+service_2_desc: "Professional management of apartments and lease agreements.",
+service_3_title: "Consulting",
+service_3_desc: "Technical, legal, and financial support for all your real estate needs."
 },
 ar: {
-langLabel: "Language:",
-title: "جستي دوموس",
-tagline: "قانون • عقارات • مزادات",
-location: "ميلانو، إيطاليا",
+langLabel: "اللغة:",
+brand_subtitle: "العقارات والخدمات",
 address_btn: "العناوين",
 contact_btn: "تواصل معنا",
-s1_title: "استشارات قانونية",
-s1_desc: "القانون المدني، الجنائي، الإداري، الأسرة، التركات والقانون التجاري.",
-s2_title: "حماية الأسرة والأفراد",
-s2_desc: "قانون الأسرة، الانفصال، الطلاق، الحضانة والقاصرين.",
-s3_title: "النزاعات والقضايا",
-s3_desc: "المساعدة والدفاع في جميع الجهات القضائية.",
-s4_title: "العقارات",
-s4_desc: "استشارات عقارية، بيع وشراء، إيجارات واستثمارات.",
-s5_title: "مزادات عقارية",
-s5_desc: "المشاركة وإدارة المزادات القضائية وغير القضائية."
+site_tagline: "حلول عقارية وخدمات عالية الجودة",
+service_1_title: "البيع والشراء",
+service_1_desc: "مساعدة متكاملة لبيع وشراء العقارات في ميلانو والمناطق المجاورة.",
+service_2_title: "الإيجارات والإدارة",
+service_2_desc: "إدارة احترافية للشقق وعقود الإيجار.",
+service_3_title: "الاستشارات",
+service_3_desc: "دعم فني وقانوني ومالي لجميع احتياجاتك العقارية."
 }
 };
 
@@ -142,7 +114,7 @@ root.setAttribute('lang', lang);
 document.querySelectorAll('[data-translate]').forEach(element => {
 const key = element.getAttribute('data-translate');
 if (translations[lang] && translations[lang][key]) {
-element.textContent = translations[lang][key];
+element.innerHTML = translations[lang][key];
 }
 });
 
@@ -150,7 +122,15 @@ const label = document.getElementById('lang-label');
 if (label && translations[lang]) {
 label.textContent = translations[lang].langLabel;
 }
+
+localStorage.setItem('selected_lang', lang);
 }
+
+window.onload = function() {
+const savedLang = localStorage.getItem('selected_lang') || 'it';
+document.getElementById('lang-select').value = savedLang;
+changeLanguage(savedLang);
+};
 </script>
 </body>
 </html>
