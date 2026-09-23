@@ -1,546 +1,561 @@
+Studio Europa:
 <!DOCTYPE html>
 <html lang="it" dir="ltr" id="html-root" translate="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Justy Domus</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Justy Domus</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- شريط التنقل العلوي -->
-    <header class="top-bar">
-        <div class="container lang-container">
-            <a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="brand_subtitle">JUSTY DOMUS</a>
-            <div class="top-right-controls">
-                <a href="index.html" class="nav-btn" data-translate="nav_home">Home</a>
-                <a href="about.html" class="nav-btn" style="color: #d4af37;" data-translate="nav_about">About Us</a>
-                <a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
-                <a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
-                
-                <div class="language-selector">
-                    <label for="lang-select" id="lang-label" data-translate="lang_label">Language:</label>
-                    <select id="lang-select" onchange="changeLanguage(this.value)">
-                        <option value="it" id="opt-it">Italiano</option>
-                        <option value="en" id="opt-en">English</option>
-                        <option value="ar" id="opt-ar">العربية</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main class="main-content">
-        <!-- 1. قسم الهيرو (Hero Section) -->
-        <section class="about-hero text-center container">
-            <h1 class="site-title" data-translate="hero_title">JUSTY DOMUS</h1>
-            <p class="hero-headline" data-translate="hero_headline">Professional Services. Italian Expertise. One Trusted Office.</p>
-            <p class="hero-sub" data-translate="hero_sub">"Supporting individuals, families and businesses in Italy through professional assistance, administrative services, property solutions and business support."</p>
-            <div class="hero-buttons">
-                <a href="#services" class="map-link" data-translate="btn_discover">Discover Our Services</a>
-                <a href="contact.html" class="map-link" style="background-color: #1a1a1a; color: #d4af37; margin-left: 10px;" data-translate="btn_contact">Contact Us</a>
-            </div>
-        </section>
-
-        <!-- 2. نبذة عن الشركة (About Section) -->
-        <section class="container about-section">
-            <h2 class="section-title text-center" data-translate="about_title">About JUSTY DOMUS</h2>
-            <div class="about-text-box">
-                <p data-translate="about_p1">"JUSTY DOMUS is an Italy-based professional office providing a range of integrated services designed to support individuals, families, property owners, entrepreneurs and companies throughout their activities in Italy."</p>
-                <p data-translate="about_p2">"From administrative and immigration-related procedures to residence permit support, CAF services, real estate opportunities, auctions and company administration, our approach is based on professionalism, transparency and personalized assistance."</p>
-                <p class="highlight-text" data-translate="about_p3">Clients can access several complementary services through one professional point of contact.</p>
-            </div>
-        </section>
-
-        <!-- 3. خدماتنا الأساسية (Our Services) -->
-        <section id="services" class="container services-detailed-section">
-            <h2 class="section-title text-center" data-translate="services_main_title">Our Professional Services</h2>
-            
-            <div class="services-grid">
-                <!-- أ. الهجرة وتقنين الأوضاع -->
-                <div class="service-card">
-<h3 data-translate="s1_title">Immigration & Regularization in Italy</h3>
-                    <ul>
-                        <li data-translate="s1_li1">Support with regularization procedures</li>
-                        <li data-translate="s1_li2">Residence permit assistance</li>
-                        <li data-translate="s1_li3">Residence permit renewal support</li>
-                        <li data-translate="s1_li4">Administrative follow-up</li>
-                        <li data-translate="s1_li5">Documentation assistance</li>
-                        <li data-translate="s1_li6">Appointment and procedure coordination</li>
-                        <li data-translate="s1_li7">Support throughout the relevant administrative process</li>
-                    </ul>
-                </div>
-
-                <!-- ب. خدمات CAF والخدمات الإدارية -->
-                <div class="service-card">
-                    <h3 data-translate="s2_title">CAF & Administrative Services</h3>
-                    <ul>
-                        <li data-translate="s2_li1">CAF-related services</li>
-                        <li data-translate="s2_li2">Administrative documentation</li>
-                        <li data-translate="s2_li3">Tax-related assistance</li>
-                        <li data-translate="s2_li4">ISEE-related procedures</li>
-                        <li data-translate="s2_li5">Family and social administrative services</li>
-                        <li data-translate="s2_li6">Document preparation and submission support</li>
-                    </ul>
-                </div>
-
-                <!-- ج. العقارات والمزادات -->
-                <div class="service-card">
-                    <h3 data-translate="s3_title">Real Estate & Property Auctions</h3>
-                    <ul>
-                        <li data-translate="s3_li1">Property search</li>
-                        <li data-translate="s3_li2">Real estate opportunities</li>
-                        <li data-translate="s3_li3">Property auctions</li>
-                        <li data-translate="s3_li4">Auction documentation support</li>
-                        <li data-translate="s3_li5">Property evaluation support</li>
-                        <li data-translate="s3_li6">Coordination with relevant professionals</li>
-                        <li data-translate="s3_li7">Investment-oriented property research</li>
-                    </ul>
-                </div>
-
-                <!-- د. الشركات والخدمات التجارية -->
-                <div class="service-card">
-                    <h3 data-translate="s4_title">Company & Business Services</h3>
-                    <ul>
-                        <li data-translate="s4_li1">Company administration</li>
-                        <li data-translate="s4_li2">Business documentation</li>
-                        <li data-translate="s4_li3">Administrative follow-up</li>
-                        <li data-translate="s4_li4">Support for entrepreneurs</li>
-                        <li data-translate="s4_li5">Company-related procedures</li>
-                        <li data-translate="s4_li6">Coordination with accountants, lawyers and other professionals when required</li>
-                        <li data-translate="s4_li7">Business support for international clients</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. لماذا جستي دوموس (Why Justy Domus) -->
-        <section class="container why-section">
-            <h2 class="section-title text-center" data-translate="why_title">Why JUSTY DOMUS</h2>
-            <div class="values-grid">
-                <div class="value-card text-center">
-                    <h4 data-translate="val_1_title">Professionalism</h4>
-                    <p data-translate="val_1_desc">High standards and expertise in managing complex procedures.</p>
-                </div>
-                <div class="value-card text-center">
-                    <h4 data-translate="val_2_title">Transparency</h4>
-<p data-translate="val_2_desc">Clear communication and honest guidance at every stage.</p>
-                </div>
-                <div class="value-card text-center">
-                    <h4 data-translate="val_3_title">Personalized Assistance</h4>
-                    <p data-translate="val_3_desc">Tailored support designed around your specific situation.</p>
-                </div>
-                <div class="value-card text-center">
-                    <h4 data-translate="val_4_title">Integrated Services</h4>
-                    <p data-translate="val_4_desc">Multiple complementary solutions under one roof.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. منهجية عملنا (Our Approach - Timeline) -->
-        <section class="container approach-section">
-            <h2 class="section-title text-center" data-translate="approach_title">Our Approach</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="step-num">01</span>
-                    <h4 data-translate="step_1_title">Understand</h4>
-                    <p data-translate="step_1_desc">We understand the client's situation and objectives.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="step-num">02</span>
-                    <h4 data-translate="step_2_title">Assess</h4>
-                    <p data-translate="step_2_desc">We identify the relevant procedures, requirements and available options.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="step-num">03</span>
-                    <h4 data-translate="step_3_title">Prepare</h4>
-                    <p data-translate="step_3_desc">We organize the necessary documentation and coordinate the required steps.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="step-num">04</span>
-                    <h4 data-translate="step_4_title">Follow Up</h4>
-                    <p data-translate="step_4_desc">We monitor the process and keep the client informed throughout the relevant stages.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. شبكة المهنيين (Professional Network) -->
-        <section class="container network-section text-center">
-            <div class="network-box">
-                <p data-translate="network_text">"Depending on the nature of the service, JUSTY DOMUS coordinates with qualified professionals and specialized partners to provide clients with appropriate support."</p>
-            </div>
-        </section>
-
-        <!-- 7. الـ CTA النهائي (Final CTA) -->
-        <section class="final-cta text-center container">
-            <h2 data-translate="cta_headline">Let's Find the Right Solution for You.</h2>
-            <p data-translate="cta_text">"Whether you need assistance with your stay in Italy, administrative procedures, property opportunities or business matters, our team is ready to understand your needs and guide you through the next steps."</p>
-            <div style="margin-top: 30px;">
-                <a href="contact.html" class="map-link" data-translate="cta_btn1">Contact JUSTY DOMUS</a>
-                <a href="contact.html" class="map-link" style="background-color: #1a1a1a; color: #d4af37; margin-left: 10px;" data-translate="cta_btn2">Request a Consultation</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- الفوتر الاحترافي (Footer) -->
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3 data-translate="brand_subtitle">JUSTY DOMUS</h3>
-                <p data-translate="footer_brand_desc">Professional Services in Italy</p>
-            </div>
-            <div class="footer-col">
-                <h4 data-translate="footer_nav_title">Navigation</h4>
-                <ul>
-                    <li><a href="index.html" data-translate="nav_home">Home</a></li>
-                    <li><a href="about.
-html" data-translate="nav_about">About Us</a></li>
-                    <li><a href="addresses.html" data-translate="address_btn">Addresses</a></li>
-                    <li><a href="contact.html" data-translate="contact_btn">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 data-translate="footer_services_title">Services</h4>
-                <ul>
-                    <li data-translate="footer_s1">Immigration & Regularization</li>
-                    <li data-translate="footer_s2">CAF Services</li>
-                    <li data-translate="footer_s3">Real Estate & Auctions</li>
-                    <li data-translate="footer_s4">Company Services</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom text-center">
-            <p>&copy; 2026 JUSTY DOMUS. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- كود الترجمة الشامل (i18n) للغات الثلاثة -->
-    <script>
-        const translations = {
-            it: {
-                lang_label: "Lingua:",
-                opt_it: "Italiano",
-                opt_en: "Inglese",
-                opt_ar: "Arabo",
-                brand_subtitle: "JUSTY DOMUS",
-                nav_home: "Home",
-                nav_about: "Chi Siamo",
-                address_btn: "Indirizzi",
-                contact_btn: "Contatti",
-                
-                hero_title: "JUSTY DOMUS",
-                hero_headline: "Servizi Professionali. Competenza Italiana. Un Unico Ufficio Di Fiducia.",
-                hero_sub: "\"Supporto a individui, famiglie e imprese in Italia attraverso assistenza professionale, servizi amministrativi, soluzioni immobiliari e supporto aziendale.\"",
-                btn_discover: "Scopri I Nostri Servizi",
-                btn_contact: "Contattaci",
-
-                about_title: "Chi Siamo - JUSTY DOMUS",
-                about_p1: "\"JUSTY DOMUS è uno studio professionale con sede in Italia che offre una gamma di servizi integrati progettati per supportare individui, famiglie, proprietari di immobili, imprenditori e aziende durante tutte le loro attività in Italia.\"",
-                about_p2: "\"Dalle procedure amministrative e di immigrazione al supporto per il permesso di soggiorno, servizi CAF, opportunità immobiliari, aste e amministrazione aziendale, il nostro approccio si basa su professionalità, trasparenza e assistenza personalizzata.\"",
-                about_p3: "I clienti possono accedere a diversi servizi complementari attraverso un unico punto di riferimento professionale.",
-
-                services_main_title: "I Nostri Servizi Professionali",
-
-                s1_title: "Regolarizzazione e Permessi di Soggiorno in Italia",
-                s1_li1: "Supporto nelle procedure di regolarizzazione",
-                s1_li2: "Assistenza per il permesso di soggiorno",
-                s1_li3: "Supporto per il rinnovo del permesso di soggiorno",
-                s1_li4: "Seguito amministrativo",
-                s1_li5: "Assistenza documentale",
-                s1_li6: "Coordinamento di appuntamenti e procedure",
-                s1_li7: "Supporto durante l'intero processo amministrativo rilevante",
-
-                s2_title: "Servizi CAF e Amministrativi",
-                s2_li1: "Servizi connessi al CAF",
-                s2_li2: "Documentazione amministrativa",
-                s2_li3: "Assistenza fiscale",
-                s2_li4: "Procedure relative all'ISEE",
-                s2_li5: "Servizi amministrativi familiari e sociali",
-                s2_li6: "Supporto per la preparazione e la presentazione dei documenti",
-
-                s3_title: "Immobili e Aste Immobiliari",
-                s3_li1: "Ricerca immobiliare",
-                s3_li2: "Opportunità immobiliari",
-                s3_li3: "Aste immobiliari",
-                s3_li4: "Supporto per la documentazione d'asta",
-                s3_li5: "Supporto per la valutazione immobiliare",
-                s3_li6: "Coordinamento con professionisti qualificati",
-s3_li7: "Ricerca immobiliare orientata agli investimenti",
-
-                s4_title: "Gestione Aziendale e Servizi per Imprese",
-                s4_li1: "Amministrazione aziendale",
-                s4_li2: "Documentazione commerciale",
-                s4_li3: "Seguito amministrativo",
-                s4_li4: "Supporto per gli imprenditori",
-                s4_li5: "Procedure relative alle aziende",
-                s4_li6: "Coordinamento con commercialisti, avvocati e altri professionisti quando richiesto",
-                s4_li7: "Supporto aziendale per clienti internazionali",
-
-                why_title: "Perché Scegliere JUSTY DOMUS",
-                val_1_title: "Professionalità",
-                val_1_desc: "Alti standard ed esperienza nella gestione di procedure complesse.",
-                val_2_title: "Trasparenza",
-                val_2_desc: "Comunicazione chiara e guida onesta in ogni fase.",
-                val_3_title: "Assistenza Personalizzata",
-                val_3_desc: "Supporto su misura progettato intorno alla tua situazione specifica.",
-                val_4_title: "Servizi Integrati",
-                val_4_desc: "Molteplici soluzioni complementari sotto un unico tetto.",
-
-                approach_title: "Il Nostro Approccio",
-                step_1_title: "Comprendere",
-                step_1_desc: "Comprendiamo la situazione e gli obiettivi del cliente.",
-                step_2_title: "Valutare",
-                step_2_desc: "Identifichiamo le procedure pertinenti, i requisiti e le opzioni disponibili.",
-                step_3_title: "Preparare",
-                step_3_desc: "Organizziamo la documentazione necessaria e coordiniamo i passaggi richiesti.",
-                step_4_title: "Seguire",
-                step_4_desc: "Monitoriamo il processo e teniamo informato il cliente durante le fasi rilevanti.",
-
-                network_text: "\"A seconda della natura del servizio, JUSTY DOMUS si coordina con professionisti qualificati e partner specializzati per fornire ai clienti il supporto appropriato.\"",
-
-                cta_headline: "Troviamo la Giusta Soluzione per Te.",
-                cta_text: "\"Che tu abbia bisogno di assistenza per il tuo soggiorno in Italia, procedure amministrative, opportunità immobiliari o questioni aziendali, il nostro team è pronto a comprendere le tue esigenze e guidarti nei prossimi passi.\"",
-                cta_btn1: "Contatta JUSTY DOMUS",
-                cta_btn2: "Richiedi una Consulenza",
-
-                footer_brand_desc: "Servizi Professionali in Italia",
-                footer_nav_title: "Navigazione",
-                footer_services_title: "Servizi",
-                footer_s1: "Immigrazione e Regolarizzazione",
-                footer_s2: "Servizi CAF",
-                footer_s3: "Immobili e Aste",
-                footer_s4: "Servizi Aziendali"
-            },
-            en: {
-                lang_label: "Language:",
-                opt_it: "Italian",
-                opt_en: "English",
-                opt_ar: "Arabic",
-                brand_subtitle: "JUSTY DOMUS",
-                nav_home: "Home",
-                nav_about: "About Us",
-                address_btn: "Addresses",
-                contact_btn: "Contact Us",
-
-                hero_title: "JUSTY DOMUS",
-                hero_headline: "Professional Services. Italian Expertise. One Trusted Office.",
-                hero_sub: "\"Supporting individuals, families and businesses in Italy through professional assistance, administrative services, property solutions and business support.\"",
-                btn_discover: "Discover Our Services",
-                btn_contact: "Contact Us",
-
-                about_title: "About JUSTY DOMUS",
-                about_p1: "\"JUSTY DOMUS is an Italy-based professional office providing a range of integrated services designed to support individuals, families, property owners, entrepreneurs and companies throughout their activities in Italy.\"",
-about_p2: "\"From administrative and immigration-related procedures to residence permit support, CAF services, real estate opportunities, auctions and company administration, our approach is based on professionalism, transparency and personalized assistance.\"",
-                about_p3: "Clients can access several complementary services through one professional point of contact.",
-
-                services_main_title: "Our Professional Services",
-
-                s1_title: "Immigration & Regularization in Italy",
-                s1_li1: "Support with regularization procedures",
-                s1_li2: "Residence permit assistance",
-                s1_li3: "Residence permit renewal support",
-                s1_li4: "Administrative follow-up",
-                s1_li5: "Documentation assistance",
-                s1_li6: "Appointment and procedure coordination",
-                s1_li7: "Support throughout the relevant administrative process",
-
-                s2_title: "CAF & Administrative Services",
-                s2_li1: "CAF-related services",
-                s2_li2: "Administrative documentation",
-                s2_li3: "Tax-related assistance",
-                s2_li4: "ISEE-related procedures",
-                s2_li5: "Family and social administrative services",
-                s2_li6: "Document preparation and submission support",
-
-                s3_title: "Real Estate & Property Auctions",
-                s3_li1: "Property search",
-                s3_li2: "Real estate opportunities",
-                s3_li3: "Property auctions",
-                s3_li4: "Auction documentation support",
-                s3_li5: "Property evaluation support",
-                s3_li6: "Coordination with relevant professionals",
-                s3_li7: "Investment-oriented property research",
-
-                s4_title: "Company & Business Services",
-                s4_li1: "Company administration",
-                s4_li2: "Business documentation",
-                s4_li3: "Administrative follow-up",
-                s4_li4: "Support for entrepreneurs",
-                s4_li5: "Company-related procedures",
-                s4_li6: "Coordination with accountants, lawyers and other professionals when required",
-                s4_li7: "Business support for international clients",
-
-                why_title: "Why JUSTY DOMUS",
-                val_1_title: "Professionalism",
-                val_1_desc: "High standards and expertise in managing complex procedures.",
-                val_2_title: "Transparency",
-                val_2_desc: "Clear communication and honest guidance at every stage.",
-                val_3_title: "Personalized Assistance",
-                val_3_desc: "Tailored support designed around your specific situation.",
-                val_4_title: "Integrated Services",
-                val_4_desc: "Multiple complementary solutions under one roof.",
-
-                approach_title: "Our Approach",
-                step_1_title: "Understand",
-                step_1_desc: "We understand the client's situation and objectives.",
-                step_2_title: "Assess",
-                step_2_desc: "We identify the relevant procedures, requirements and available options.",
-                step_3_title: "Prepare",
-                step_3_desc: "We organize the necessary documentation and coordinate the required steps.",
-                step_4_title: "Follow Up",
-                step_4_desc: "We monitor the process and keep the client informed throughout the relevant stages.",
-
-                network_text: "\"Depending on the nature of the service, JUSTY DOMUS coordinates with qualified professionals and specialized partners to provide clients with appropriate support.\"",
-
-                cta_headline: "Let's Find the Right Solution for You.",
-                cta_text: "\"Whether you need assistance with your stay in Italy, administrative procedures, property opportunities or business matters, our team is ready to understand your needs and guide you through the next steps.\"",
-cta_btn1: "Contact JUSTY DOMUS",
-                cta_btn2: "Request a Consultation",
-
-                footer_brand_desc: "Professional Services in Italy",
-                footer_nav_title: "Navigation",
-                footer_services_title: "Services",
-                footer_s1: "Immigration & Regularization",
-                footer_s2: "CAF Services",
-                footer_s3: "Real Estate & Auctions",
-                footer_s4: "Company Services"
-            },
-            ar: {
-                lang_label: "اللغة:",
-                opt_it: "الإيطالية",
-                opt_en: "الإنجليزية",
-                opt_ar: "العربية",
-                brand_subtitle: "جستي دوموس",
-                nav_home: "الرئيسية",
-                nav_about: "من نحن",
-                address_btn: "العناوين",
-                contact_btn: "تواصل معنا",
-
-                hero_title: "جستي دوموس",
-                hero_headline: "خدمات احترافية. خبرة إيطالية. مكتب واحد موثوق.",
-                hero_sub: "\"دعم الأفراد والعائلات والشركات في إيطاليا من خلال المساعدة المهنية، الخدمات الإدارية، الحلول العقارية ودعم الأعمال.\"",
-                btn_discover: "اكتشف خدماتنا",
-                btn_contact: "تواصل معنا",
-
-                about_title: "عن جستي دوموس",
-                about_p1: "\"جستي دوموس هو مكتب مهني مقره إيطاليا يقدم مجموعة من الخدمات المتكاملة المصممة لدعم الأفراد، العائلات، أصحاب العقارات، رواد الأعمال والشركات طوال أنشطتهم في إيطاليا.\"",
-                about_p2: "\"من الإجراءات الإدارية المتعلقة بالهجرة إلى دعم تصاريح الإقامة، خدمات CAF، الفرص العقارية، المزادات وإدارة الشركات، يعتمد نهجنا على المهنية، والشفافية، والمساعدة المخصصة.\"",
-                about_p3: "يمكن للعملاء الوصول إلى العديد من الخدمات التكاملية من خلال نقطة اتصال مهنية واحدة.",
-
-                services_main_title: "خدماتنا المهنية",
-
-                s1_title: "تقنين الأوضاع والإجراءات في إيطاليا",
-                s1_li1: "الدعم في إجراءات تقنين الأوضاع",
-                s1_li2: "المساعدة في استخراج تصاريح الإقامة",
-                s1_li3: "الدعم في تجديد تصاريح الإقامة",
-                s1_li4: "المتابعة الإدارية",
-                s1_li5: "المساعدة في توثيق المستندات",
-                s1_li6: "تنسيق المواعيد والإجراءات",
-                s1_li7: "الدعم طوال العملية الإدارية ذات الصلة",
-
-                s2_title: "خدمات CAF والخدمات الإدارية",
-                s2_li1: "الخدمات المتعلقة بمكتب CAF",
-                s2_li2: "إعداد المستندات الإدارية",
-                s2_li3: "المساعدة الضريبية",
-                s2_li4: "إجراءات شهادة ISEE",
-                s2_li5: "الخدمات الإدارية الأسرية والاجتماعية",
-                s2_li6: "الدعم في إعداد وتقديم المستندات",
-
-                s3_title: "العقارات والمزادات العقارية",
-                s3_li1: "البحث عن العقارات",
-                s3_li2: "الفرص العقارية المتاحة",
-                s3_li3: "المزادات العقارية",
-                s3_li4: "دعم مستندات المزادات",
-                s3_li5: "دعم تقييم العقارات",
-                s3_li6: "التنسيق مع المهنيين المختصين",
-                s3_li7: "بحوث العقارات الموجهة للاستثمار",
-
-                s4_title: "إدارة الشركات والخدمات التجارية",
-                s4_li1: "إدارة الشركات",
-                s4_li2: "المستندات التجارية",
-                s4_li3: "المتابعة الإدارية المستمرة",
-                s4_li4: "الدعم لرواد الأعمال",
-                s4_li5: "الإجراءات الخاصة بالشركات",
-                s4_li6: "التنسيق مع المحاسبين والمحامين وغيرهم من المهنيين عند الحاجة",
-                s4_li7: "دعم الأعمال للعملاء الدوليين",
-
-                why_title: "لماذا تختار جستي دوموس",
-                val_1_title: "المهنية والاحترافية",
-                val_1_desc: "معايير عالية وخبرة واسعة في إدارة الإجراءات المعقدة.",
-                val_2_title: "الشفافية",
-                val_2_desc: "تواصل واضح وتوجيه صادق في كل مرحلة.",
-                val_3_title: "مساعدة مخصصة",
-                val_3_desc: "دعم مخصص مصمم خصيصاً ليناسب حالتك الفردية.",
-                val_4_title: "خدمات متكاملة",
-                val_4_desc: "حلول متعددة ومتكاملة تحت سقف واحد.",
-approach_title: "منهجية عملنا",
-                step_1_title: "الفهم",
-                step_1_desc: "نفهم حالة العميل وأهدافه بدقة.",
-                step_2_title: "التقييم",
-                step_2_desc: "نحدد الإجراءات والمتطلبات والخيارات المتاحة ذات الصلة.",
-                step_3_title: "التحضير",
-                step_3_desc: "نجهز المستندات اللازمة وننسق الخطوات المطلوبة.",
-                step_4_title: "المتابعة",
-                step_4_desc: "راقب العملية ونبقي العميل على اطلاع طوال المراحل ذات الصلة.",
-
-                network_text: "\"اعتماداً على طبيعة الخدمة، تنسق جستي دوموس مع مهنيين مؤهلين وشركاء متخصصين لتزويد العملاء بالدعم المناسب.\"",
-
-                cta_headline: "دعنا نجد الحل المناسب لك.",
-                cta_text: "\"سواء كنت بحاجة إلى مساعدة بشأن إقامتك في إيطاليا، الإجراءات الإدارية، الفرص العقارية أو الأمور التجارية، فريقنا مستعد لفهم احتياجاتك وإرشادك خلال الخطوات القادمة.\"",
-                cta_btn1: "تواصل مع جستي دوموس",
-                cta_btn2: "اطلب استشارة",
-
-                footer_brand_desc: "خدمات مهنية في إيطاليا",
-                footer_nav_title: "التنقل",
-                footer_services_title: "الخدمات",
-                footer_s1: "الهجرة وتقنين الأوضاع",
-                footer_s2: "خدمات CAF",
-                footer_s3: "العقارات والمزادات",
-                footer_s4: "خدمات الشركات"
-            }
-        };
-
-        function changeLanguage(lang) {
-            const root = document.getElementById('html-root');
-            if (lang === 'ar') {
-                root.setAttribute('dir', 'rtl');
-                root.setAttribute('lang', 'ar');
-            } else {
-                root.setAttribute('dir', 'ltr');
-                root.setAttribute('lang', lang);
-            }
-
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (translations[lang] && translations[lang][key]) {
-                    element.innerHTML = translations[lang][key];
-                }
-            });
-            
-            const label = document.getElementById('lang-label');
-            if (label && translations[lang]) {
-                label.textContent = translations[lang].lang_label;
-            }
-
-            document.getElementById('opt-it').textContent = translations[lang].opt_it;
-            document.getElementById('opt-en').textContent = translations[lang].opt_en;
-            document.getElementById('opt-ar').textContent = translations[lang].opt_ar;
-
-            localStorage.setItem('selected_lang', lang);
-        }
-
-        window.onload = function() {
-            const savedLang = localStorage.getItem('selected_lang') || 'it';
-            document.getElementById('lang-select').value = savedLang;
-            changeLanguage(savedLang);
-        };
-    </script>
-</body>
-</html>
-
+<!-- شريط التنقل العلوي -->
+<header class="top-bar">
+<div class="container lang-container">
+<a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="brand_subtitle">JUSTY DOMUS</a>
+<div class="top-right-controls">
 <a href="index.html" class="nav-btn" data-translate="nav_home">Home</a>
-<a href="about.html" class="nav-btn" data-translate="nav_about">About Us</a>
+<a href="about.html" class="nav-btn" style="color: #d4af37;" data-translate="nav_about">About Us</a>
 <a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
 <a href="results.html" class="nav-btn" data-translate="nav_results">Our Results</a>
 <a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
+
+<div class="language-selector">
+<label for="lang-select" id="lang-label" data-translate="lang_label">Language:</label>
+<select id="lang-select" onchange="changeLanguage(this.value)">
+<option value="it" id="opt-it">Italiano</option>
+<option value="en" id="opt-en">English</option>
+<option value="ar" id="opt-ar">العربية</option>
+</select>
+</div>
+</div>
+</div>
+</header>
+
+<main class="main-content">
+<!-- 1. قسم الهيرو (Hero Section) -->
+<section class="about-hero text-center container">
+<h1 class="site-title" data-translate="hero_title">JUSTY DOMUS</h1>
+<p class="hero-headline" data-translate="hero_headline">Professional Services. Italian Expertise. One Trusted Office.</p>
+<p class="hero-sub" data-translate="hero_sub">"Supporting individuals, families and businesses in Italy through professional assistance, administrative services, property solutions and business support."</p>
+<div class="hero-buttons">
+<a href="#services" class="map-link" data-translate="btn_discover">Discover Our Services</a>
+<a href="contact.html" class="map-link" style="background-color: #1a1a1a; color: #d4af37; margin-left: 10px;" data-translate="btn_contact">Contact Us</a>
+</div>
+</section>
+
+<!-- 2. نبذة عن الشركة (About Section) -->
+<section class="container about-section">
+<h2 class="section-title text-center" data-translate="about_title">About JUSTY DOMUS</h2>
+<div class="about-text-box">
+<p data-translate="about_p1">"JUSTY DOMUS is an Italy-based professional office providing a range of integrated services designed to support individuals, families, property owners, entrepreneurs and companies throughout their activities in Italy."</p>
+<p data-translate="about_p2">"From administrative and immigration-related procedures to residence permit support, CAF services, real estate opportunities, auctions and company administration, our approach is based on professionalism, transparency and personalized assistance."</p>
+<p class="highlight-text" data-translate="about_p3">Clients can access several complementary services through one professional point of contact.</p>
+</div>
+</section>
+
+<!-- 3. خدماتنا الأساسية (Our Services) -->
+<section id="services" class="container services-detailed-section">
+<h2 class="section-title text-center" data-translate="services_main_title">Our Professional Services</h2>
+
+<div class="services-grid">
+<!-- أ. الهجرة وتقنين الأوضاع -->
+
+Studio Europa:
+<div class="service-card">
+<h3 data-translate="s1_title">Immigration & Regularization in Italy</h3>
+<ul>
+<li data-translate="s1_li1">Support with regularization procedures</li>
+<li data-translate="s1_li2">Residence permit assistance</li>
+<li data-translate="s1_li3">Residence permit renewal support</li>
+<li data-translate="s1_li4">Administrative follow-up</li>
+<li data-translate="s1_li5">Documentation assistance</li>
+<li data-translate="s1_li6">Appointment and procedure coordination</li>
+<li data-translate="s1_li7">Support throughout the relevant administrative process</li>
+</ul>
+</div>
+
+<!-- ب. خدمات CAF والخدمات الإدارية -->
+<div class="service-card">
+<h3 data-translate="s2_title">CAF & Administrative Services</h3>
+<ul>
+<li data-translate="s2_li1">CAF-related services</li>
+<li data-translate="s2_li2">Administrative documentation</li>
+<li data-translate="s2_li3">Tax-related assistance</li>
+<li data-translate="s2_li4">ISEE-related procedures</li>
+<li data-translate="s2_li5">Family and social administrative services</li>
+<li data-translate="s2_li6">Document preparation and submission support</li>
+</ul>
+</div>
+
+<!-- ج. العقارات والمزادات -->
+<div class="service-card">
+<h3 data-translate="s3_title">Real Estate & Property Auctions</h3>
+<ul>
+<li data-translate="s3_li1">Property search</li>
+<li data-translate="s3_li2">Real estate opportunities</li>
+<li data-translate="s3_li3">Property auctions</li>
+<li data-translate="s3_li4">Auction documentation support</li>
+<li data-translate="s3_li5">Property evaluation support</li>
+<li data-translate="s3_li6">Coordination with relevant professionals</li>
+<li data-translate="s3_li7">Investment-oriented property research</li>
+</ul>
+</div>
+
+<!-- د. الشركات والخدمات التجارية -->
+<div class="service-card">
+<h3 data-translate="s4_title">Company & Business Services</h3>
+<ul>
+<li data-translate="s4_li1">Company administration</li>
+<li data-translate="s4_li2">Business documentation</li>
+<li data-translate="s4_li3">Administrative follow-up</li>
+<li data-translate="s4_li4">Support for entrepreneurs</li>
+<li data-translate="s4_li5">Company-related procedures</li>
+<li data-translate="s4_li6">Coordination with accountants, lawyers and other professionals when required</li>
+<li data-translate="s4_li7">Business support for international clients</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- 4. لماذا جستي دوموس (Why Justy Domus) -->
+<section class="container why-section">
+<h2 class="section-title text-center" data-translate="why_title">Why JUSTY DOMUS</h2>
+<div class="values-grid">
+<div class="value-card text-center">
+<h4 data-translate="val_1_title">Professionalism</h4>
+<p data-translate="val_1_desc">High standards and expertise in managing complex procedures.</p>
+</div>
+<div class="value-card text-center">
+<h4 data-translate="val_2_title">Transparency</h4>
+
+Studio Europa:
+<p data-translate="val_2_desc">Clear communication and honest guidance at every stage.</p>
+</div>
+<div class="value-card text-center">
+<h4 data-translate="val_3_title">Personalized Assistance</h4>
+<p data-translate="val_3_desc">Tailored support designed around your specific situation.</p>
+</div>
+<div class="value-card text-center">
+<h4 data-translate="val_4_title">Integrated Services</h4>
+<p data-translate="val_4_desc">Multiple complementary solutions under one roof.</p>
+</div>
+</div>
+</section>
+
+<!-- 5. منهجية عملنا (Our Approach - Timeline) -->
+<section class="container approach-section">
+<h2 class="section-title text-center" data-translate="approach_title">Our Approach</h2>
+<div class="timeline">
+<div class="timeline-item">
+<span class="step-num">01</span>
+<h4 data-translate="step_1_title">Understand</h4>
+<p data-translate="step_1_desc">We understand the client's situation and objectives.</p>
+</div>
+<div class="timeline-item">
+<span class="step-num">02</span>
+<h4 data-translate="step_2_title">Assess</h4>
+<p data-translate="step_2_desc">We identify the relevant procedures, requirements and available options.</p>
+</div>
+<div class="timeline-item">
+<span class="step-num">03</span>
+<h4 data-translate="step_3_title">Prepare</h4>
+<p data-translate="step_3_desc">We organize the necessary documentation and coordinate the required steps.</p>
+</div>
+<div class="timeline-item">
+<span class="step-num">04</span>
+<h4 data-translate="step_4_title">Follow Up</h4>
+<p data-translate="step_4_desc">We monitor the process and keep the client informed throughout the relevant stages.</p>
+</div>
+</div>
+</section>
+
+<!-- 6. شبكة المهنيين (Professional Network) -->
+<section class="container network-section text-center">
+<div class="network-box">
+<p data-translate="network_text">"Depending on the nature of the service, JUSTY DOMUS coordinates with qualified professionals and specialized partners to provide clients with appropriate support."</p>
+</div>
+</section>
+
+<!-- 7. الـ CTA النهائي (Final CTA) -->
+<section class="final-cta text-center container">
+<h2 data-translate="cta_headline">Let's Find the Right Solution for You.</h2>
+<p data-translate="cta_text">"Whether you need assistance with your stay in Italy, administrative procedures, property opportunities or business matters, our team is ready to understand your needs and guide you through the next steps."</p>
+<div style="margin-top: 30px;">
+<a href="contact.html" class="map-link" data-translate="cta_btn1">Contact JUSTY DOMUS</a>
+<a href="contact.html" class="map-link" style="background-color: #1a1a1a; color: #d4af37; margin-left: 10px;" data-translate="cta_btn2">Request a Consultation</a>
+</div>
+</section>
+</main>
+
+<!-- الفوتر الاحترافي (Footer) -->
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-col">
+<h3 data-translate="brand_subtitle">JUSTY DOMUS</h3>
+<p data-translate="footer_brand_desc">Professional Services in Italy</p>
+</div>
+<div class="footer-col">
+<h4 data-translate="footer_nav_title">Navigation</h4>
+<ul>
+<li><a href="index.html" data-translate="nav_home">Home</a></li>
+<li><a href="about.
+
+Studio Europa:
+html" data-translate="nav_about">About Us</a></li>
+<li><a href="addresses.html" data-translate="address_btn">Addresses</a></li>
+<li><a href="results.html" data-translate="nav_results">Our Results</a></li>
+<li><a href="contact.html" data-translate="contact_btn">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 data-translate="footer_services_title">Services</h4>
+<ul>
+<li data-translate="footer_s1">Immigration & Regularization</li>
+<li data-translate="footer_s2">CAF Services</li>
+<li data-translate="footer_s3">Real Estate & Auctions</li>
+<li data-translate="footer_s4">Company Services</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom text-center">
+<p>&copy; 2026 JUSTY DOMUS. All rights reserved.</p>
+</div>
+</footer>
+
+<!-- كود الترجمة الشامل (i18n) للغات الثلاثة -->
+<script>
+const translations = {
+it: {
+lang_label: "Lingua:",
+opt_it: "Italiano",
+opt_en: "Inglese",
+opt_ar: "Arabo",
+brand_subtitle: "JUSTY DOMUS",
+nav_home: "Home",
+nav_about: "Chi Siamo",
+address_btn: "Indirizzi",
+nav_results: "I Nostri Risultati",
+contact_btn: "Contatti",
+
+hero_title: "JUSTY DOMUS",
+hero_headline: "Servizi Professionali. Competenza Italiana. Un Unico Ufficio Di Fiducia.",
+hero_sub: "\"Supporto a individui, famiglie e imprese in Italia attraverso assistenza professionale, servizi amministrativi, soluzioni immobiliari e supporto aziendale.\"",
+btn_discover: "Scopri I Nostri Servizi",
+btn_contact: "Contattaci",
+
+about_title: "Chi Siamo - JUSTY DOMUS",
+about_p1: "\"JUSTY DOMUS è uno studio professionale con sede in Italia che offre una gamma di servizi integrati progettati per supportare individui, famiglie, proprietari di immobili, imprenditori e aziende durante tutte le loro attività in Italia.\"",
+about_p2: "\"Dalle procedure amministrative e di immigrazione al supporto per il permesso di soggiorno, servizi CAF, opportunità immobiliari, aste e amministrazione aziendale, il nostro approccio si basa su professionalità, trasparenza e assistenza personalizzata.\"",
+about_p3: "I clienti possono accedere a diversi servizi complementari attraverso un unico punto di riferimento professionale.",
+
+services_main_title: "I Nostri Servizi Professionali",
+
+s1_title: "Regolarizzazione e Permessi di Soggiorno in Italia",
+s1_li1: "Supporto nelle procedure di regolarizzazione",
+s1_li2: "Assistenza per il permesso di soggiorno",
+s1_li3: "Supporto per il rinnovo del permesso di soggiorno",
+s1_li4: "Seguito amministrativo",
+s1_li5: "Assistenza documentale",
+s1_li6: "Coordinamento di appuntamenti e procedure",
+s1_li7: "Supporto durante l'intero processo amministrativo rilevante",
+
+s2_title: "Servizi CAF e Amministrativi",
+s2_li1: "Servizi connessi al CAF",
+s2_li2: "Documentazione amministrativa",
+s2_li3: "Assistenza fiscale",
+s2_li4: "Procedure relative all'ISEE",
+s2_li5: "Servizi amministrativi familiari e sociali",
+s2_li6: "Supporto per la preparazione e la presentazione dei documenti",
+
+s3_title: "Immobili e Aste Immobiliari",
+s3_li1: "Ricerca immobiliare",
+s3_li2: "Opportunità immobiliari",
+s3_li3: "Aste immobiliari",
+s3_li4: "Supporto per la documentazione d'asta",
+
+Studio Europa:
+s3_li5: "Supporto per la valutazione immobiliare",
+s3_li6: "Coordinamento con professionisti qualificati",
+s3_li7: "Ricerca immobiliare orientata agli investimenti",
+
+s4_title: "Gestione Aziendale e Servizi per Imprese",
+s4_li1: "Amministrazione aziendale",
+s4_li2: "Documentazione commerciale",
+s4_li3: "Seguito amministrativo",
+s4_li4: "Supporto per gli imprenditori",
+s4_li5: "Procedure relative alle aziende",
+s4_li6: "Coordinamento con commercialisti, avvocati e altri professionisti quando richiesto",
+s4_li7: "Supporto aziendale per clienti internazionali",
+
+why_title: "Perché Scegliere JUSTY DOMUS",
+val_1_title: "Professionalità",
+val_1_desc: "Alti standard ed esperienza nella gestione di procedure complesse.",
+val_2_title: "Trasparenza",
+val_2_desc: "Comunicazione chiara e guida onesta in ogni fase.",
+val_3_title: "Assistenza Personalizzata",
+val_3_desc: "Supporto su misura progettato intorno alla tua situazione specifica.",
+val_4_title: "Servizi Integrati",
+val_4_desc: "Molteplici soluzioni complementari sotto un unico tetto.",
+
+approach_title: "Il Nostro Approccio",
+step_1_title: "Comprendere",
+step_1_desc: "Comprendiamo la situazione e gli obiettivi del cliente.",
+step_2_title: "Valutare",
+step_2_desc: "Identifichiamo le procedure pertinenti, i requisiti e le opzioni disponibili.",
+step_3_title: "Preparare",
+step_3_desc: "Organizziamo la documentazione necessaria e coordiniamo i passaggi richiesti.",
+step_4_title: "Seguire",
+step_4_desc: "Monitoriamo il processo e teniamo informato il cliente durante le fasi rilevanti.",
+
+network_text: "\"A seconda della natura del servizio, JUSTY DOMUS si coordina con professionisti qualificati e partner specializzati per fornire ai clienti il supporto appropriato.\"",
+
+cta_headline: "Troviamo la Giusta Soluzione per Te.",
+cta_text: "\"Che tu abbia bisogno di assistenza per il tuo soggiorno in Italia, procedure amministrative, opportunità immobiliari o questioni aziendali, il nostro team è pronto a comprendere le tue esigenze e guidarti nei prossimi passi.\"",
+cta_btn1: "Contatta JUSTY DOMUS",
+cta_btn2: "Richiedi una Consulenza",
+
+footer_brand_desc: "Servizi Professionali in Italia",
+footer_nav_title: "Navigazione",
+footer_services_title: "Servizi",
+footer_s1: "Immigrazione e Regolarizzazione",
+footer_s2: "Servizi CAF",
+footer_s3: "Immobili e Aste",
+footer_s4: "Servizi Aziendali"
+},
+en: {
+lang_label: "Language:",
+opt_it: "Italian",
+opt_en: "English",
+opt_ar: "Arabic",
+brand_subtitle: "JUSTY DOMUS",
+nav_home: "Home",
+nav_about: "About Us",
+address_btn: "Addresses",
+nav_results: "Our Results",
+contact_btn: "Contact Us",
+
+hero_title: "JUSTY DOMUS",
+hero_headline: "Professional Services. Italian Expertise. One Trusted Office.",
+hero_sub: "\"Supporting individuals, families and businesses in Italy through professional assistance, administrative services, property solutions and business support.\"",
+btn_discover: "Discover Our Services",
+btn_contact: "Contact Us",
+
+about_title: "About JUSTY DOMUS",
+
+Studio Europa:
+about_p1: "\"JUSTY DOMUS is an Italy-based professional office providing a range of integrated services designed to support individuals, families, property owners, entrepreneurs and companies throughout their activities in Italy.\"",
+about_p2: "\"From administrative and immigration-related procedures to residence permit support, CAF services, real estate opportunities, auctions and company administration, our approach is based on professionalism, transparency and personalized assistance.\"",
+about_p3: "Clients can access several complementary services through one professional point of contact.",
+
+services_main_title: "Our Professional Services",
+
+s1_title: "Immigration & Regularization in Italy",
+s1_li1: "Support with regularization procedures",
+s1_li2: "Residence permit assistance",
+s1_li3: "Residence permit renewal support",
+s1_li4: "Administrative follow-up",
+s1_li5: "Documentation assistance",
+s1_li6: "Appointment and procedure coordination",
+s1_li7: "Support throughout the relevant administrative process",
+
+s2_title: "CAF & Administrative Services",
+s2_li1: "CAF-related services",
+s2_li2: "Administrative documentation",
+s2_li3: "Tax-related assistance",
+s2_li4: "ISEE-related procedures",
+s2_li5: "Family and social administrative services",
+s2_li6: "Document preparation and submission support",
+
+s3_title: "Real Estate & Property Auctions",
+s3_li1: "Property search",
+s3_li2: "Real estate opportunities",
+s3_li3: "Property auctions",
+s3_li4: "Auction documentation support",
+s3_li5: "Property evaluation support",
+s3_li6: "Coordination with relevant professionals",
+s3_li7: "Investment-oriented property research",
+
+s4_title: "Company & Business Services",
+s4_li1: "Company administration",
+s4_li2: "Business documentation",
+s4_li3: "Administrative follow-up",
+s4_li4: "Support for entrepreneurs",
+s4_li5: "Company-related procedures",
+s4_li6: "Coordination with accountants, lawyers and other professionals when required",
+s4_li7: "Business support for international clients",
+
+why_title: "Why JUSTY DOMUS",
+val_1_title: "Professionalism",
+val_1_desc: "High standards and expertise in managing complex procedures.",
+val_2_title: "Transparency",
+val_2_desc: "Clear communication and honest guidance at every stage.",
+val_3_title: "Personalized Assistance",
+val_3_desc: "Tailored support designed around your specific situation.",
+val_4_title: "Integrated Services",
+val_4_desc: "Multiple complementary solutions under one roof.",
+
+approach_title: "Our Approach",
+step_1_title: "Understand",
+step_1_desc: "We understand the client's situation and objectives.",
+step_2_title: "Assess",
+step_2_desc: "We identify the relevant procedures, requirements and available options.",
+step_3_title: "Prepare",
+step_3_desc: "We organize the necessary documentation and coordinate the required steps.",
+step_4_title: "Follow Up",
+step_4_desc: "We monitor the process and keep the client informed throughout the relevant stages.",
+
+network_text: "\"Depending on the nature of the service, JUSTY DOMUS coordinates with qualified professionals and specialized partners to provide clients with appropriate support.\"",
+
+cta_headline: "Let's Find the Right Solution for You.",
+
+Studio Europa:
+cta_text: "\"Whether you need assistance with your stay in Italy, administrative procedures, property opportunities or business matters, our team is ready to understand your needs and guide you through the next steps.\"",
+cta_btn1: "Contact JUSTY DOMUS",
+cta_btn2: "Request a Consultation",
+
+footer_brand_desc: "Professional Services in Italy",
+footer_nav_title: "Navigation",
+footer_services_title: "Services",
+footer_s1: "Immigration & Regularization",
+footer_s2: "CAF Services",
+footer_s3: "Real Estate & Auctions",
+footer_s4: "Company Services"
+},
+ar: {
+lang_label: "اللغة:",
+opt_it: "الإيطالية",
+opt_en: "الإنجليزية",
+opt_ar: "العربية",
+brand_subtitle: "جستي دوموس",
+nav_home: "الرئيسية",
+nav_about: "من نحن",
+address_btn: "العناوين",
+nav_results: "أعمالنا ونتائجنا",
+contact_btn: "تواصل معنا",
+
+hero_title: "جستي دوموس",
+hero_headline: "خدمات احترافية. خبرة إيطالية. مكتب واحد موثوق.",
+hero_sub: "\"دعم الأفراد والعائلات والشركات في إيطاليا من خلال المساعدة المهنية، الخدمات الإدارية، الحلول العقارية ودعم الأعمال.\"",
+btn_discover: "اكتشف خدماتنا",
+btn_contact: "تواصل معنا",
+
+about_title: "عن جستي دوموس",
+about_p1: "\"جستي دوموس هو مكتب مهني مقره إيطاليا يقدم مجموعة من الخدمات المتكاملة المصممة لدعم الأفراد، العائلات، أصحاب العقارات، رواد الأعمال والشركات طوال أنشطتهم في إيطاليا.\"",
+about_p2: "\"من الإجراءات الإدارية المتعلقة بالهجرة إلى دعم تصاريح الإقامة، خدمات CAF، الفرص العقارية، المزادات وإدارة الشركات، يعتمد نهجنا على المهنية، والشفافية، والمساعدة المخصصة.\"",
+about_p3: "يمكن للعملاء الوصول إلى العديد من الخدمات التكاملية من خلال نقطة اتصال مهنية واحدة.",
+
+services_main_title: "خدماتنا المهنية",
+
+s1_title: "تقنين الأوضاع والإجراءات في إيطاليا",
+s1_li1: "الدعم في إجراءات تقنين الأوضاع",
+s1_li2: "المساعدة في استخراج تصاريح الإقامة",
+s1_li3: "الدعم في تجديد تصاريح الإقامة",
+s1_li4: "المتابعة الإدارية",
+s1_li5: "المساعدة في توثيق المستندات",
+s1_li6: "تنسيق المواعيد والإجراءات",
+s1_li7: "الدعم طوال العملية الإدارية ذات الصلة",
+
+s2_title: "خدمات CAF والخدمات الإدارية",
+s2_li1: "الخدمات المتعلقة بمكتب CAF",
+s2_li2: "إعداد المستندات الإدارية",
+s2_li3: "المساعدة الضريبية",
+s2_li4: "إجراءات شهادة ISEE",
+s2_li5: "الخدمات الإدارية الأسرية والاجتماعية",
+s2_li6: "الدعم في إعداد وتقديم المستندات",
+
+s3_title: "العقارات والمزادات العقارية",
+s3_li1: "البحث عن العقارات",
+s3_li2: "الفرص العقارية المتاحة",
+s3_li3: "المزادات العقارية",
+s3_li4: "دعم مستندات المزادات",
+s3_li5: "دعم تقييم العقارات",
+s3_li6: "التنسيق مع المهنيين المختصين",
+s3_li7: "بحوث العقارات الموجهة للاستثمار",
+
+s4_title: "إدارة الشركات والخدمات التجارية",
+s4_li1: "إدارة الشركات",
+s4_li2: "المستندات التجارية",
+s4_li3: "المتابعة الإدارية المستمرة",
+s4_li4: "الدعم لرواد الأعمال",
+s4_li5: "الإجراءات الخاصة بالشركات",
+s4_li6: "التنسيق مع المحاسبين والمحامين وغيرهم من المهنيين عند الحاجة",
+s4_li7: "دعم الأعمال للعملاء الدوليين",
+
+why_title: "لماذا تختار جستي دوموس",
+val_1_title: "المهنية والاحترافية",
+val_1_desc: "معايير عالية وخبرة واسعة في إدارة الإجراءات المعقدة.",
+val_2_title: "الشفافية",
+
+Studio Europa:
+val_2_desc: "تواصل واضح وتوجيه صادق في كل مرحلة.",
+val_3_title: "مساعدة مخصصة",
+val_3_desc: "دعم مخصص مصمم خصيصاً ليناسب حالتك الفردية.",
+val_4_title: "خدمات متكاملة",
+val_4_desc: "حلول متعددة ومتكاملة تحت سقف واحد.",
+
+approach_title: "منهجية عملنا",
+step_1_title: "الفهم",
+step_1_desc: "نفهم حالة العميل وأهدافه بدقة.",
+step_2_title: "التقييم",
+step_2_desc: "نحدد الإجراءات والمتطلبات والخيارات المتاحة ذات الصلة.",
+step_3_title: "التحضير",
+step_3_desc: "نجهز المستندات اللازمة وننسق الخطوات المطلوبة.",
+step_4_title: "المتابعة",
+step_4_desc: "راقب العملية ونبقي العميل على اطلاع طوال المراحل ذات الصلة.",
+
+network_text: "\"اعتماداً على طبيعة الخدمة، تنسق جستي دوموس مع مهنيين مؤهلين وشركاء متخصصين لتزويد العملاء بالدعم المناسب.\"",
+
+cta_headline: "دعنا نجد الحل المناسب لك.",
+cta_text: "\"سواء كنت بحاجة إلى مساعدة بشأن إقامتك في إيطاليا، الإجراءات الإدارية، الفرص العقارية أو الأمور التجارية، فريقنا مستعد لفهم احتياجاتك وإرشادك خلال الخطوات القادمة.\"",
+cta_btn1: "تواصل مع جستي دوموس",
+cta_btn2: "اطلب استشارة",
+
+footer_brand_desc: "خدمات مهنية في إيطاليا",
+footer_nav_title: "التنقل",
+footer_services_title: "الخدمات",
+footer_s1: "الهجرة وتقنين الأوضاع",
+footer_s2: "خدمات CAF",
+footer_s3: "العقارات والمزادات",
+footer_s4: "خدمات الشركات"
+}
+};
+
+function changeLanguage(lang) {
+const root = document.getElementById('html-root');
+if (lang === 'ar') {
+root.setAttribute('dir', 'rtl');
+root.setAttribute('lang', 'ar');
+} else {
+root.setAttribute('dir', 'ltr');
+root.setAttribute('lang', lang);
+}
+
+document.querySelectorAll('[data-translate]').forEach(element => {
+const key = element.getAttribute('data-translate');
+if (translations[lang] && translations[lang][key]) {
+element.innerHTML = translations[lang][key];
+}
+});
+
+const label = document.getElementById('lang-label');
+if (label && translations[lang]) {
+label.textContent = translations[lang].lang_label;
+}
+
+document.getElementById('opt-it').textContent = translations[lang].opt_it;
+document.getElementById('opt-en').textContent = translations[lang].opt_en;
+document.getElementById('opt-ar').textContent = translations[lang].opt_ar;
+
+localStorage.setItem('selected_lang', lang);
+}
+
+window.onload = function() {
+const savedLang = localStorage.getItem('selected_lang') || 'it';
+document.getElementById('lang-select').value = savedLang;
+changeLanguage(savedLang);
+};
+</script>
+</body>
+</html>
