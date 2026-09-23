@@ -152,4 +152,27 @@ transition: color 0.3s;
 
 .nav-contact-btn:hover {
 color: #fff;
+}.lang-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: nowrap; /* يمنع نزول العناصر لسطر جديد */
+}
+
+.top-right-controls {
+display: flex;
+align-items: center;
+gap: 15px; /* المسافة بين زر Contact Us وقائمة اللغة */
+white-space: nowrap;
+}
+
+.nav-contact-btn {
+color: #d4af37;
+text-decoration: none;
+font-weight: 600;
+transition: color 0.3s;
+}
+
+.nav-contact-btn:hover {
+color: #fff;
 }
