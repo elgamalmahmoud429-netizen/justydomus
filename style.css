@@ -23,6 +23,8 @@ background-color: #1a1a1a;
 color: #fff;
 padding: 15px 0;
 border-bottom: 2px solid #d4af37;
+position: relative;
+z-index: 10;
 }
 
 .lang-container {
@@ -79,41 +81,41 @@ cursor: pointer;
 font-family: inherit;
 }
 
-/* اللوجو يملأ مساحة الشاشة بالكامل بانورامياً */
-.main-content {
-padding: 0 0 40px 0;
+/* جعل اللوجو يظهر كصورة كاملة غير مقصوصة في الأعلى مع باقي المحتوى أسفله */
+.hero-section {
+padding: 40px 0 60px 0;
+background-color: #fcfbfa;
 }
 
-.full-width-logo-container {
-width: 100vw;
-margin-left: calc(-50vw + 50%);
-background-color: #1a1a1a;
-text-align: center;
-margin-bottom: 40px;
-padding: 0;
-overflow: hidden;
+.logo-wrapper {
+width: 100%;
+max-width: 1300px;
+margin: 0 auto 30px auto;
+padding: 0 15px;
 }
 
 .full-screen-logo {
-width: 100vw; /* يمتد ليأخذ عرض الشاشة بالكامل 100% */
+width: 100%;
 height: auto;
-max-height: 550px; /* زيادة الارتفاع قليلاً لملء المساحة الأولى بوضوح */
-object-fit: cover; /* يملأ العرض بالكامل بانورامياً وبدون فراغات */
+object-fit: contain; /* يضمن ظهور اللوجو كاملاً من فوق ومن تحت ومن الجانبين دون أي قص */
 display: block;
 margin: 0 auto;
 }
 
 .site-title {
 font-family: 'Playfair Display', serif;
-font-size: 2.5rem;
+font-size: 2.8rem;
 color: #1a1a1a;
+margin-top: 20px;
 margin-bottom: 10px;
+font-weight: 700;
 }
 
 .site-tagline {
-color: #666;
-font-size: 1.1rem;
+color: #555;
+font-size: 1.2rem;
 letter-spacing: 1px;
+margin-bottom: 40px;
 }
 
 /* شبكة الخدمات والمكاتب */
@@ -121,21 +123,21 @@ letter-spacing: 1px;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 gap: 30px;
-margin-top: 40px;
+margin-top: 20px;
 }
 
 .service-card, .office-box {
-background: #fff;
+background: rgba(255, 255, 255, 0.95); /* خلفية بيضاء شفافة قليلاً لتندمج بروعة مع التصميم */
 border: 1px solid #e6e2dd;
 padding: 30px;
 border-radius: 8px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover, .office-box:hover {
 transform: translateY(-5px);
-box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+box-shadow: 0 6px 20px rgba(212, 175, 55, 0.2);
 }
 
 .service-card h3, .office-box h3 {
