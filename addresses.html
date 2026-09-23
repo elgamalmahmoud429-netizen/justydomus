@@ -35,11 +35,14 @@ Studio Europa:
 <p class="site-tagline" style="margin-bottom: 40px;" data-translate="location">MILANO, ITALIA</p>
 
 <div class="offices-grid">
+<!-- المكتب الرئيسي -->
 <div class="office-box">
 <h3 data-translate="main_office_title">Main Office</h3>
 <p data-translate="main_office_desc">📍 Via Roma, 170<br>20037 Paderno Dugnano MI</p>
 <a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank" class="map-link" data-translate="map_btn">Open in Google Maps 🗺️</a>
 </div>
+
+<!-- المكتب الفرعي (تم تصحيح رابط اللوكيشن الخاص به) -->
 <div class="office-box">
 <h3 data-translate="branch_office_title">Branch Office</h3>
 <p data-translate="branch_office_desc">Dettagli e indirizzo della sede secondaria a Milano</p>
@@ -77,10 +80,10 @@ contact_btn: "Contact Us",
 page_title: "Our Offices",
 location: "MILAN, ITALY",
 main_office_title: "Main Office",
-main_office_desc: "📍 Via Roma, 170<br>20037 Paderno Dugnano MI",
-branch_office_title: "Branch Office",
 
 Studio Europa:
+main_office_desc: "📍 Via Roma, 170<br>20037 Paderno Dugnano MI",
+branch_office_title: "Branch Office",
 branch_office_desc: "Details and address of the branch office in Milan.",
 map_btn: "Open in Google Maps 🗺️",
 back_home_btn: "Back to Home"
@@ -126,7 +129,6 @@ label.textContent = translations[lang].langLabel;
 localStorage.setItem('selected_lang', lang);
 }
 
-// الحفاظ على اللغة المختارة عند التنقل بين الصفحات
 window.onload = function() {
 const savedLang = localStorage.getItem('selected_lang') || 'it';
 document.getElementById('lang-select').value = savedLang;
