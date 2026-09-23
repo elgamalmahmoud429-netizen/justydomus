@@ -14,11 +14,11 @@ Studio Europa:
 <div class="container lang-container">
 <span class="brand-subtitle">Milano, Italia 🇮🇹</span>
 <div class="top-right-controls">
-<!-- زر الانتقال لقسم العناوين في الأسفل -->
-<a href="#addresses-section" class="nav-btn" data-translate="address_btn">Addresses</a>
+<!-- زر ينتقل لصفحة العناوين المستقلة -->
+<a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
 
-<!-- زر التواصل -->
-<a href="#contact-section" class="nav-btn" data-translate="contact_btn">Contact Us</a>
+<!-- زر ينتقل لصفحة التواصل المستقلة -->
+<a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
 
 <!-- قائمة تغيير اللغة -->
 <div class="language-selector">
@@ -35,8 +35,9 @@ Studio Europa:
 
 <main class="main-content">
 <div class="container text-center">
-<div class="logo-wrapper">
-<img src="logo.png" alt="Justy Domus Logo" class="main-logo">
+<!-- الشعار بحجم كبير جداً وبارز -->
+<div class="logo-wrapper-fullscreen">
+<img src="logo.png" alt="Justy Domus Logo" class="fullscreen-logo">
 </div>
 
 <h1 class="site-title" data-translate="title">Justy Domus</h1>
@@ -68,38 +69,6 @@ Studio Europa:
 </div>
 </main>
 
-<!-- قسم العناوين في الأسفل (ينقلك إليه زر Address) -->
-<section id="addresses-section" class="info-section">
-<div class="container">
-<h2 data-translate="addresses_heading">Our Offices / Sedi / عناوين المكاتب</h2>
-<div class="offices-grid">
-<div class="office-box">
-<h3 data-translate="main_office_title">المكتب الرئيسي (Main Office)</h3>
-<p>📍 Via Roma, 170<br>20037 Paderno Dugnano MI</p>
-<a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank" class="map-link" data-translate="map_btn">Open in Google Maps 🗺️</a>
-</div>
-<div class="office-box">
-
-Studio Europa:
-<h3 data-translate="branch_office_title">المكتب الفرعي (Branch Office)</h3>
-<p data-translate="branch_address_desc">تفاصيل وعنوان المكتب الفرعي في ميلانو</p>
-<a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank" class="map-link" data-translate="map_btn">Open in Google Maps 🗺️</a>
-</div>
-</div>
-</div>
-</section>
-
-<!-- قسم بيانات التواصل في الأسفل -->
-<footer id="contact-section" class="site-footer">
-<div class="container footer-content">
-<h3 data-translate="contact_title">Contatti</h3>
-<div class="contact-info">
-<p>📧 Email: <a href="mailto:justydomus@gmail.com">justydomus@gmail.com</a></p>
-<p>📞 Phone: <a href="tel:+393474364053">+39 347 436 4053</a></p>
-</div>
-</div>
-</footer>
-
 <script>
 const translations = {
 it: {
@@ -109,22 +78,18 @@ tagline: "DIRITTO • IMMOBILI • ASTE",
 location: "MILANO, ITALIA",
 address_btn: "Indirizzi",
 contact_btn: "Contatti",
-addresses_heading: "I Nostri Uffici",
-main_office_title: "Sede Principale",
-branch_office_title: "Sede Secondaria",
-branch_address_desc: "Indirizzo della sede secondaria a Milano",
-map_btn: "Apri su Google Maps 🗺️",
 s1_title: "Consulenza Legale",
 s1_desc: "Diritto Civile, Penale, Amministrativo, Famiglia, Successioni e Commerciale.",
 s2_title: "Tutela Della Persona",
 s2_desc: "Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.",
 s3_title: "Contenzioso e Litigi",
+
+Studio Europa:
 s3_desc: "Assistenza e difesa in ogni sede giudiziaria.",
 s4_title: "Immobili Real Estate",
 s4_desc: "Consulenza immobiliare, compravendite, locazioni e investimenti.",
 s5_title: "Aste Immobiliari",
-s5_desc: "Partecipazione e gestione aste giudiziarie e stragiudiziarie.",
-contact_title: "Contatti"
+s5_desc: "Partecipazione e gestione aste giudiziarie e stragiudiziarie."
 },
 en: {
 langLabel: "Language:",
@@ -133,11 +98,6 @@ tagline: "LAW • REAL ESTATE • AUCTIONS",
 location: "MILAN, ITALY",
 address_btn: "Addresses",
 contact_btn: "Contact Us",
-addresses_heading: "Our Offices",
-main_office_title: "Main Office",
-branch_office_title: "Branch Office",
-branch_address_desc: "Branch office location in Milan",
-map_btn: "Open in Google Maps 🗺️",
 s1_title: "Legal Consulting",
 s1_desc: "Civil, Criminal, Administrative, Family, Succession, and Commercial Law.",
 s2_title: "Personal Protection",
@@ -147,8 +107,7 @@ s3_desc: "Assistance and defense in all judicial venues.",
 s4_title: "Real Estate",
 s4_desc: "Real estate consulting, sales, rentals, and investments.",
 s5_title: "Real Estate Auctions",
-s5_desc: "Participation and management of judicial and extrajudicial auctions.",
-contact_title: "Contact Us"
+s5_desc: "Participation and management of judicial and extrajudicial auctions."
 },
 ar: {
 langLabel: "Language:",
@@ -157,13 +116,6 @@ tagline: "قانون • عقارات • مزادات",
 location: "ميلانو، إيطاليا",
 address_btn: "العناوين",
 contact_btn: "تواصل معنا",
-addresses_heading: "عناوين مكاتبنا",
-main_office_title: "المكتب الرئيسي",
-branch_office_title: "المكتب الفرعي",
-branch_address_desc: "تفاصيل عنوان المكتب الفرعي في ميلانو",
-
-Studio Europa:
-map_btn: "افتح عبر خرائط جوجل 🗺️",
 s1_title: "استشارات قانونية",
 s1_desc: "القانون المدني، الجنائي، الإداري، الأسرة، التركات والقانون التجاري.",
 s2_title: "حماية الأسرة والأفراد",
@@ -173,8 +125,7 @@ s3_desc: "المساعدة والدفاع في جميع الجهات القضا�
 s4_title: "العقارات",
 s4_desc: "استشارات عقارية، بيع وشراء، إيجارات واستثمارات.",
 s5_title: "مزادات عقارية",
-s5_desc: "المشاركة وإدارة المزادات القضائية وغير القضائية.",
-contact_title: "تواصل معنا"
+s5_desc: "المشاركة وإدارة المزادات القضائية وغير القضائية."
 }
 };
 
