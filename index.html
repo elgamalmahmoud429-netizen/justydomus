@@ -14,9 +14,7 @@ Studio Europa:
 <div class="container lang-container">
 <span class="brand-subtitle">Milano, Italia 🇮🇹</span>
 <div class="top-right-controls">
-<!-- خانة التواصل الثابتة بجانب اللغة -->
 <a href="#contact-section" class="nav-contact-btn">Contact Us</a>
-
 <div class="language-selector">
 <label for="lang-select" id="lang-label">Language:</label>
 <select id="lang-select" onchange="changeLanguage(this.value)">
@@ -85,9 +83,9 @@ location: "MILANO, ITALIA",
 s1_title: "Consulenza Legale",
 s1_desc: "Diritto Civile, Penale, Amministrativo, Famiglia, Successioni e Commerciale.",
 s2_title: "Tutela Della Persona",
+s2_desc: "Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.",
 
 Studio Europa:
-s2_desc: "Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.",
 s3_title: "Contenzioso e Litigi",
 s3_desc: "Assistenza e difesa in ogni sede giudiziaria.",
 s4_title: "Immobili Real Estate",
@@ -128,7 +126,6 @@ s4_title: "العقارات",
 s4_desc: "استشارات عقارية، بيع وشراء، إيجارات واستثمارات.",
 s5_title: "مزادات عقارية",
 s5_desc: "المشاركة وإدارة المزادات القضائية وغير القضائية.",
-s5_title: "استشارات عقارية",
 contact_title: "تواصل معنا"
 }
 };
@@ -145,11 +142,15 @@ root.setAttribute('lang', lang);
 
 document.querySelectorAll('[data-translate]').forEach(element => {
 const key = element.getAttribute('data-translate');
-if (translations[lang][key]) {
+if (translations[lang] && translations[lang][key]) {
 element.textContent = translations[lang][key];
 }
 });
-document.getElementById('lang-label').textContent = translations[lang].langLabel;
+
+const label = document.getElementById('lang-label');
+if (label && translations[lang]) {
+label.textContent = translations[lang].langLabel;
+}
 }
 </script>
 </body>
