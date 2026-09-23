@@ -14,7 +14,24 @@ Studio Europa:
 <div class="container lang-container">
 <span class="brand-subtitle">Milano, Italia 🇮🇹</span>
 <div class="top-right-controls">
+
+<!-- خانة العنوان مع قائمة منسدلة للمكتبين -->
+<div class="dropdown">
+<button class="dropbtn" data-translate="address_btn">Address ▾</button>
+<div class="dropdown-content">
+<div class="office-category" data-translate="main_office_title">المكتب الرئيسي (Main Office):</div>
+<a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank">Via Roma, 170<br>20037 Paderno Dugnano MI</a>
+
+<div class="office-category" data-translate="branch_office_title">المكتب الفرعي (Branch Office):</div>
+<!-- يمكنك استبدال الرابط أدناه برابط خريطة المكتب الفرعي الفعلي إن وجد -->
+<a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank" data-translate="branch_address_text">Milano Branch Location</a>
+</div>
+</div>
+
+<!-- خانة التواصل الثابتة -->
 <a href="#contact-section" class="nav-contact-btn">Contact Us</a>
+
+<!-- قائمة تغيير اللغة -->
 <div class="language-selector">
 <label for="lang-select" id="lang-label">Language:</label>
 <select id="lang-select" onchange="changeLanguage(this.value)">
@@ -58,6 +75,8 @@ Studio Europa:
 <h3 data-translate="s5_title">Aste Immobiliari</h3>
 <p data-translate="s5_desc">Partecipazione e gestione aste giudiziarie e stragiudiziarie.</p>
 </div>
+
+Studio Europa:
 </section>
 </div>
 </main>
@@ -80,12 +99,14 @@ langLabel: "Language:",
 title: "Justy Domus",
 tagline: "DIRITTO • IMMOBILI • ASTE",
 location: "MILANO, ITALIA",
+address_btn: "Indirizzo ▾",
+main_office_title: "Sede Principale:",
+branch_office_title: "Sede Secondaria:",
+branch_address_text: "Milano (Altro Ufficio)",
 s1_title: "Consulenza Legale",
 s1_desc: "Diritto Civile, Penale, Amministrativo, Famiglia, Successioni e Commerciale.",
 s2_title: "Tutela Della Persona",
 s2_desc: "Diritto di Famiglia, Separazioni, Divorzi, Affidamento, Minori.",
-
-Studio Europa:
 s3_title: "Contenzioso e Litigi",
 s3_desc: "Assistenza e difesa in ogni sede giudiziaria.",
 s4_title: "Immobili Real Estate",
@@ -99,6 +120,10 @@ langLabel: "Language:",
 title: "Justy Domus",
 tagline: "LAW • REAL ESTATE • AUCTIONS",
 location: "MILAN, ITALY",
+address_btn: "Address ▾",
+main_office_title: "Main Office:",
+branch_office_title: "Branch Office:",
+branch_address_text: "Milan (Branch Location)",
 s1_title: "Legal Consulting",
 s1_desc: "Civil, Criminal, Administrative, Family, Succession, and Commercial Law.",
 s2_title: "Personal Protection",
@@ -116,6 +141,10 @@ langLabel: "Language:",
 title: "جستي دوموس",
 tagline: "قانون • عقارات • مزادات",
 location: "ميلانو، إيطاليا",
+address_btn: "العنوان ▾",
+main_office_title: "المكتب الرئيسي:",
+branch_office_title: "المكتب الفرعي:",
+branch_address_text: "فرع ميلانو الآخر",
 s1_title: "استشارات قانونية",
 s1_desc: "القانون المدني، الجنائي، الإداري، الأسرة، التركات والقانون التجاري.",
 s2_title: "حماية الأسرة والأفراد",
@@ -132,6 +161,8 @@ contact_title: "تواصل معنا"
 
 function changeLanguage(lang) {
 const root = document.getElementById('html-root');
+
+Studio Europa:
 if (lang === 'ar') {
 root.setAttribute('dir', 'rtl');
 root.setAttribute('lang', 'ar');
