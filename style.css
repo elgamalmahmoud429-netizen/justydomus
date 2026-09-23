@@ -79,7 +79,7 @@ cursor: pointer;
 font-family: inherit;
 }
 
-/* الشعار بعرض الشاشة بالكامل وبدون بهتان أو قص */
+/* اللوجو يملأ مساحة الشاشة بالكامل بانورامياً */
 .main-content {
 padding: 0 0 40px 0;
 }
@@ -87,7 +87,7 @@ padding: 0 0 40px 0;
 .full-width-logo-container {
 width: 100vw;
 margin-left: calc(-50vw + 50%);
-background-color: #1a1a1a; /* يندمج بلون الشريط الأسود العلوي */
+background-color: #1a1a1a;
 text-align: center;
 margin-bottom: 40px;
 padding: 0;
@@ -95,11 +95,10 @@ overflow: hidden;
 }
 
 .full-screen-logo {
-width: 100%;
-max-width: 1400px;
+width: 100vw; /* يمتد ليأخذ عرض الشاشة بالكامل 100% */
 height: auto;
-max-height: 480px;
-object-fit: contain; /* يحافظ على جودة الصورة والألوان وزاهية دون أي بهتان أو مط */
+max-height: 550px; /* زيادة الارتفاع قليلاً لملء المساحة الأولى بوضوح */
+object-fit: cover; /* يملأ العرض بالكامل بانورامياً وبدون فراغات */
 display: block;
 margin: 0 auto;
 }
