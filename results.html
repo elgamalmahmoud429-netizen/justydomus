@@ -1,0 +1,413 @@
+Studio Europa:
+<!DOCTYPE html>
+<html lang="it" dir="ltr" id="html-root" translate="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Results - Justy Domus</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- شريط التنقل العلوي -->
+<header class="top-bar">
+<div class="container lang-container">
+<a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="brand_subtitle">JUSTY DOMUS</a>
+<div class="top-right-controls">
+<a href="index.html" class="nav-btn" data-translate="nav_home">Home</a>
+<a href="about.html" class="nav-btn" data-translate="nav_about">About Us</a>
+<a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
+<a href="results.html" class="nav-btn" style="color: #d4af37;" data-translate="nav_results">Our Results</a>
+<a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
+
+<div class="language-selector">
+<label for="lang-select" id="lang-label" data-translate="lang_label">Language:</label>
+<select id="lang-select" onchange="changeLanguage(this.value)">
+<option value="it" id="opt-it">Italiano</option>
+<option value="en" id="opt-en">English</option>
+<option value="ar" id="opt-ar">العربية</option>
+</select>
+</div>
+</div>
+</div>
+</header>
+
+<main class="main-content" style="padding-top: 0;">
+<!-- قسم الهيرو لصفحة النتائج -->
+<section class="results-hero">
+<div class="container text-center hero-content-box">
+<span class="hero-badge" data-translate="results_badge">OUR RESULTS</span>
+<h1 class="results-hero-title" data-translate="results_title">أعمالنا ونتائجنا</h1>
+<p class="results-hero-sub" data-translate="results_subtitle">نستعرض هنا نماذج من الخدمات والملفات التي تم إنجازها من خلال فريق JUSTY DOMUS.</p>
+</div>
+</section>
+
+<!-- أزرار التصفية (Filters) -->
+<div class="container filter-container">
+<button class="filter-btn active" data-translate="filter_all">الكل</button>
+<button class="filter-btn" data-translate="filter_work">عقود عمل</button>
+<button class="filter-btn" data-translate="filter_study">قبول دراسي</button>
+<button class="filter-btn" data-translate="filter_residence">إقامات</button>
+<button class="filter-btn" data-translate="filter_other">خدمات أخرى</button>
+</div>
+
+<!-- شبكة الدول والنتائج -->
+<div class="container results-grid-section">
+<div class="results-grid">
+
+<!-- إيطاليا -->
+<div class="result-card">
+<div class="card-img-wrapper">
+<img src="logo.png" alt="Italy" class="card-bg-img">
+<div class="card-overlay"></div>
+<div class="card-header-content">
+<span class="country-flag">🇮🇹</span>
+<h3 data-translate="country_italy">Italy / إيطاليا</h3>
+</div>
+</div>
+<div class="card-body">
+<div class="service-tags">
+<span data-translate="tag_work">💼 عقود عمل</span>
+<span data-translate="tag_residence">📄 إقامات</span>
+</div>
+<a href="contact.html" class="arrow-btn">➔</a>
+</div>
+</div>
+
+<!-- رومانيا -->
+
+Studio Europa:
+<div class="result-card">
+<div class="card-img-wrapper">
+<img src="logo.png" alt="Romania" class="card-bg-img">
+<div class="card-overlay"></div>
+<div class="card-header-content">
+<span class="country-flag">🇷🇴</span>
+<h3 data-translate="country_romania">Romania / رومانيا</h3>
+</div>
+</div>
+<div class="card-body">
+<div class="service-tags">
+<span data-translate="tag_work">💼 عقود عمل</span>
+<span data-translate="tag_residence">📄 إقامات</span>
+</div>
+<a href="contact.html" class="arrow-btn">➔</a>
+</div>
+</div>
+
+<!-- إسبانيا وقبول دراسي -->
+<div class="result-card">
+<div class="card-img-wrapper">
+<img src="logo.png" alt="Study" class="card-bg-img">
+<div class="card-overlay"></div>
+<div class="card-header-content">
+<span class="country-flag">🎓</span>
+<h3 data-translate="card_study_title">قبول دراسي / إيطاليا - إسبانيا وغيرها</h3>
+</div>
+</div>
+<div class="card-body">
+<div class="service-tags">
+<span data-translate="tag_uni">🎓 قبول جامعي</span>
+<span data-translate="tag_school">📚 قبول مدارس</span>
+</div>
+<a href="contact.html" class="arrow-btn">➔</a>
+</div>
+</div>
+
+<!-- إسبانيا -->
+<div class="result-card">
+<div class="card-img-wrapper">
+<img src="logo.png" alt="Spain" class="card-bg-img">
+<div class="card-overlay"></div>
+<div class="card-header-content">
+<span class="country-flag">🇪🇸</span>
+<h3 data-translate="country_spain">Spain / إسبانيا</h3>
+</div>
+</div>
+<div class="card-body">
+<div class="service-tags">
+<span data-translate="tag_study">🎓 قبول دراسي</span>
+<span data-translate="tag_residence">📄 إقامات</span>
+</div>
+<a href="contact.html" class="arrow-btn">➔</a>
+</div>
+</div>
+
+<!-- دول أخرى -->
+<div class="result-card dark-card">
+<div class="card-body-flex">
+<div>
+<span style="font-size: 2rem;">🌍</span>
+<h3 data-translate="more_countries" style="color: #fff; margin-top: 10px;">More Countries / دول أخرى</h3>
+<p data-translate="more_countries_sub" style="color: #ccc; font-size: 0.95rem; margin-top: 5px;">اكتشف المزيد من الدول والخدمات</p>
+</div>
+<a href="contact.html" class="arrow-btn gold-arrow">➔</a>
+</div>
+</div>
+
+<!-- بطاقة إضافية ترويجية -->
+<div class="result-card promo-card">
+<div class="card-body-flex text-center" style="justify-content: center;">
+<h3 style="font-family: 'Playfair Display', serif; color: #1a1a1a; font-style: italic;">Real People. Real Results.</h3>
+<p style="color: #555; margin-top: 10px;" data-translate="promo_sub">معاً نحو مستقبل أفضل</p>
+</div>
+</div>
+
+</div>
+</div>
+
+Studio Europa:
+<!-- قسم الإحصائيات (Stats Section) -->
+<section class="container stats-section">
+<div class="stats-grid">
+<div class="stat-box">
+<span class="stat-icon">📄</span>
+<h2 class="stat-num">150+</h2>
+<p data-translate="stat_1">ملف تم إنجازه</p>
+</div>
+<div class="stat-box">
+<span class="stat-icon">💼</span>
+<h2 class="stat-num">35+</h2>
+<p data-translate="stat_2">عقد عمل</p>
+</div>
+<div class="stat-box">
+<span class="stat-icon">🎓</span>
+<h2 class="stat-num">70+</h2>
+<p data-translate="stat_3">قبول دراسي</p>
+</div>
+<div class="stat-box">
+<span class="stat-icon">👤</span>
+<h2 class="stat-num">20+</h2>
+<p data-translate="stat_4">خدمة إقامة</p>
+</div>
+</div>
+</section>
+</main>
+
+<!-- الفوتر -->
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-col">
+<h3 data-translate="brand_subtitle">JUSTY DOMUS</h3>
+<p data-translate="footer_brand_desc">Professional Services in Italy</p>
+</div>
+<div class="footer-col">
+<h4 data-translate="footer_nav_title">Navigation</h4>
+<ul>
+<li><a href="index.html" data-translate="nav_home">Home</a></li>
+<li><a href="about.html" data-translate="nav_about">About</a></li>
+<li><a href="results.html" data-translate="nav_results">Our Results</a></li>
+<li><a href="contact.html" data-translate="contact_btn">Contact</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 data-translate="footer_services_title">Services</h4>
+<ul>
+<li data-translate="footer_s1">Immigration & Regularization</li>
+<li data-translate="footer_s2">CAF Services</li>
+<li data-translate="footer_s3">Real Estate & Auctions</li>
+<li data-translate="footer_s4">Company Services</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom text-center">
+<p>&copy; 2026 JUSTY DOMUS. All rights reserved.</p>
+</div>
+</footer>
+
+<!-- ملف الجافاسكريبت للترجمة الديناميكية للغات الثلاث -->
+<script>
+const translations = {
+it: {
+lang_label: "Lingua:",
+opt_it: "Italiano",
+opt_en: "Inglese",
+opt_ar: "Arabo",
+brand_subtitle: "JUSTY DOMUS",
+nav_home: "Home",
+nav_about: "Chi Siamo",
+address_btn: "Indirizzi",
+nav_results: "I Nostri Risultati",
+contact_btn: "Contatti",
+
+results_badge: "I NOSTRI RISULTATI",
+results_title: "I Nostri Lavori e Risultati",
+results_subtitle: "Visualizza qui esempi di servizi e pratiche completate con successo dal team di JUSTY DOMUS.",
+
+filter_all: "Tutti",
+filter_work: "Contratti di Lavoro",
+filter_study: "Ammissioni Studio",
+filter_residence: "Permessi di Soggiorno",
+filter_other: "Altri Servizi",
+
+country_italy: "Italia",
+country_romania: "Romania",
+country_spain: "Spagna",
+card_study_title: "Ammissioni Studio / Italia - Spagna",
+more_countries: "Altri Paesi",
+more_countries_sub: "Scopri altri paesi e servizi",
+
+tag_work: "💼 Contratti Lavoro",
+tag_residence: "📄 Permessi",
+tag_study: "🎓 Studio",
+tag_uni: "🎓 Università",
+
+Studio Europa:
+tag_school: "📚 Scuole",
+
+promo_sub: "Insieme verso un futuro migliore",
+
+stat_1: "Pratiche Completate",
+stat_2: "Contratti di Lavoro",
+stat_3: "Ammissioni Studio",
+stat_4: "Servizi di Soggiorno",
+
+footer_brand_desc: "Servizi Professionali in Italia",
+footer_nav_title: "Navigazione",
+footer_services_title: "Servizi",
+footer_s1: "Immigrazione e Regolarizzazione",
+footer_s2: "Servizi CAF",
+footer_s3: "Immobili e Aste",
+footer_s4: "Servizi Aziendali"
+},
+en: {
+lang_label: "Language:",
+opt_it: "Italian",
+opt_en: "English",
+opt_ar: "Arabic",
+brand_subtitle: "JUSTY DOMUS",
+nav_home: "Home",
+nav_about: "About Us",
+address_btn: "Addresses",
+nav_results: "Our Results",
+contact_btn: "Contact Us",
+
+results_badge: "OUR RESULTS",
+results_title: "Our Work & Results",
+results_subtitle: "Explore examples of services and files successfully completed by the JUSTY DOMUS team.",
+
+filter_all: "All",
+filter_work: "Work Contracts",
+filter_study: "Study Admissions",
+filter_residence: "Residences",
+filter_other: "Other Services",
+
+country_italy: "Italy",
+country_romania: "Romania",
+country_spain: "Spain",
+card_study_title: "Study Admissions / Italy - Spain",
+more_countries: "More Countries",
+more_countries_sub: "Discover more countries and services",
+
+tag_work: "💼 Work Contracts",
+tag_residence: "📄 Residences",
+tag_study: "🎓 Study",
+tag_uni: "🎓 University",
+tag_school: "📚 Schools",
+
+promo_sub: "Together towards a better future",
+
+stat_1: "Completed Files",
+stat_2: "Work Contracts",
+stat_3: "Study Admissions",
+stat_4: "Residence Services",
+
+footer_brand_desc: "Professional Services in Italy",
+footer_nav_title: "Navigation",
+footer_services_title: "Services",
+footer_s1: "Immigration & Regularization",
+footer_s2: "CAF Services",
+footer_s3: "Real Estate & Auctions",
+footer_s4: "Company Services"
+},
+ar: {
+lang_label: "اللغة:",
+opt_it: "الإيطالية",
+opt_en: "الإنجليزية",
+opt_ar: "العربية",
+brand_subtitle: "جستي دوموس",
+nav_home: "الرئيسية",
+nav_about: "من نحن",
+address_btn: "العناوين",
+nav_results: "أعمالنا ونتائجنا",
+contact_btn: "تواصل معنا",
+
+results_badge: "أعمالنا ونتائجنا",
+results_title: "أعمالنا ونتائجنا",
+results_subtitle: "نستعرض هنا نماذج من الخدمات والملفات التي تم إنجازها من خلال فريق JUSTY DOMUS.",
+
+filter_all: "الكل",
+filter_work: "عقود عمل",
+filter_study: "قبول دراسي",
+filter_residence: "إقامات",
+filter_other: "خدمات أخرى",
+
+country_italy: "إيطاليا",
+country_romania: "رومانيا",
+country_spain: "إسبانيا",
+card_study_title: "قبول دراسي / إيطاليا - إسبانيا وغيرها",
+more_countries: "دول أخرى",
+more_countries_sub: "اكتشف المزيد من الدول والخدمات",
+
+tag_work: "💼 عقود عمل",
+tag_residence: "📄 إقامات",
+tag_study: "🎓 قبول دراسي",
+tag_uni: "🎓 قبول جامعي",
+tag_school: "📚 قبول مدارس",
+
+Studio Europa:
+promo_sub: "معاً نحو مستقبل أفضل",
+
+stat_1: "ملف تم إنجازه",
+stat_2: "عقد عمل",
+stat_3: "قبول دراسي",
+stat_4: "خدمة إقامة",
+
+footer_brand_desc: "خدمات مهنية في إيطاليا",
+footer_nav_title: "التنقل",
+footer_services_title: "الخدمات",
+footer_s1: "الهجرة وتقنين الأوضاع",
+footer_s2: "خدمات CAF",
+footer_s3: "العقارات والمزادات",
+footer_s4: "خدمات الشركات"
+}
+};
+
+function changeLanguage(lang) {
+const root = document.getElementById('html-root');
+if (lang === 'ar') {
+root.setAttribute('dir', 'rtl');
+root.setAttribute('lang', 'ar');
+} else {
+root.setAttribute('dir', 'ltr');
+root.setAttribute('lang', lang);
+}
+
+document.querySelectorAll('[data-translate]').forEach(element => {
+const key = element.getAttribute('data-translate');
+if (translations[lang] && translations[lang][key]) {
+element.innerHTML = translations[lang][key];
+}
+});
+
+const label = document.getElementById('lang-label');
+if (label && translations[lang]) {
+label.textContent = translations[lang].lang_label;
+}
+
+document.getElementById('opt-it').textContent = translations[lang].opt_it;
+document.getElementById('opt-en').textContent = translations[lang].opt_en;
+document.getElementById('opt-ar').textContent = translations[lang].opt_ar;
+
+localStorage.setItem('selected_lang', lang);
+}
+
+window.onload = function() {
+const savedLang = localStorage.getItem('selected_lang') || 'it';
+document.getElementById('lang-select').value = savedLang;
+changeLanguage(savedLang);
+};
+</script>
+</body>
+</html>
