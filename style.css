@@ -79,28 +79,26 @@ cursor: pointer;
 font-family: inherit;
 }
 
-/* محتوى الشعار بعرض الشاشة الكامل */
+/* الشعار بعرض الشاشة بالكامل 100% بدون هوامش */
 .main-content {
 padding: 0 0 40px 0;
 }
 
 .full-width-logo-container {
-width: 100%;
-background-color: #ffffff;
-padding: 20px 0;
+width: 100vw;
+margin-left: calc(-50vw + 50%);
+background-color: #1a1a1a;
 text-align: center;
-border-bottom: 1px solid #eae6df;
 margin-bottom: 40px;
+overflow: hidden;
 }
 
 .full-screen-logo {
 width: 100%;
-max-width: 1400px; /* أقصى عرض يملأ الشاشة بطريقة فخمة ومريحة للعين */
+max-height: 650px;
 height: auto;
-max-height: 550px;
-object-fit: contain;
+object-fit: cover; /* ليمتد الشعار ويملأ المساحة العرضية تماماً */
 display: block;
-margin: 0 auto;
 }
 
 .site-title {
