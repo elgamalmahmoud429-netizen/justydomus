@@ -1,5 +1,6 @@
+Studio Europa:
 <!DOCTYPE html>
-<html lang="it" dir="ltr">
+<html lang="it" dir="ltr" id="html-root">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +12,126 @@
 
 <header class="top-bar">
 <div class="container lang-container">
-<a href="index.html" class="brand-subtitle" style="text-decoration: none;">← Back to Home / العودة للرئيسية</a>
+<a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="back_home">← Back to Home</a>
 <div class="top-right-controls">
-<a href="addresses.html" class="nav-btn" style="color: #fff;">Addresses</a>
-<a href="contact.html" class="nav-btn">Contact Us</a>
+<a href="addresses.html" class="nav-btn" style="color: #fff;" data-translate="address_btn">Addresses</a>
+<a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
+
+<div class="language-selector">
+<label for="lang-select" id="lang-label">Language:</label>
+<select id="lang-select" onchange="changeLanguage(this.value)">
+<option value="it">Italiano</option>
+<option value="en">English</option>
+<option value="ar">العربية</option>
+</select>
+</div>
 </div>
 </div>
 </header>
 
 <main class="main-content">
 <div class="container text-center" style="margin-top: 30px;">
-<h1 class="site-title">Our Offices / Sedi / عناوين المكاتب</h1>
-<p class="site-tagline" style="margin-bottom: 40px;">MILANO, ITALIA</p>
+<h1 class="site-title" data-translate="page_title">Our Offices</h1>
+<p class="site-tagline" style="margin-bottom: 40px;" data-translate="location">MILANO, ITALIA</p>
 
 <div class="offices-grid">
 <div class="office-box">
-<h3>المكتب الرئيسي (Main Office)</h3>
-<p>📍 Via Roma, 170<br>20037 Paderno Dugnano MI</p>
-<a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank" class="map-link">Open in Google Maps 🗺️</a>
+<h3 data-translate="main_office_title">Main Office</h3>
+<p data-translate="main_office_desc">📍 Via Roma, 170<br>20037 Paderno Dugnano MI</p>
+<a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank" class="map-link" data-translate="map_btn">Open in Google Maps 🗺️</a>
 </div>
 <div class="office-box">
-<h3>المكتب الفرعي (Branch Office)</h3>
-<p>تفاصيل وعنوان المكتب الفرعي في ميلانو</p>
-<a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank" class="map-link">Open in Google Maps 🗺️</a>
+<h3 data-translate="branch_office_title">Branch Office</h3>
+<p data-translate="branch_office_desc">Dettagli e indirizzo della sede secondaria a Milano</p>
+<a href="https://maps.app.goo.gl/9fKiYEqYH2ySPzjh9" target="_blank" class="map-link" data-translate="map_btn">Open in Google Maps 🗺️</a>
 </div>
 </div>
 
 <div style="margin-top: 50px;">
-<a href="index.html" class="map-link" style="background-color: #1a1a1a; color: #d4af37;">العودة للصفحة الرئيسية</a>
+<a href="index.html" class="map-link" style="background-color: #1a1a1a; color: #d4af37;" data-translate="back_home_btn">العودة للصفحة الرئيسية</a>
 </div>
 </div>
 </main>
 
+<script>
+const translations = {
+it: {
+langLabel: "Lingua:",
+back_home: "← Torna alla Home",
+address_btn: "Indirizzi",
+contact_btn: "Contatti",
+page_title: "Le Nostre Sedi",
+location: "MILANO, ITALIA",
+main_office_title: "Sede Principale",
+main_office_desc: "📍 Via Roma, 170<br>20037 Paderno Dugnano MI",
+branch_office_title: "Sede Secondaria",
+branch_office_desc: "Dettagli e indirizzo della sede secondaria a Milano.",
+map_btn: "Apri in Google Maps 🗺️",
+back_home_btn: "Torna alla Home"
+},
+en: {
+langLabel: "Language:",
+back_home: "← Back to Home",
+address_btn: "Addresses",
+contact_btn: "Contact Us",
+page_title: "Our Offices",
+location: "MILAN, ITALY",
+main_office_title: "Main Office",
+main_office_desc: "📍 Via Roma, 170<br>20037 Paderno Dugnano MI",
+branch_office_title: "Branch Office",
+
+Studio Europa:
+branch_office_desc: "Details and address of the branch office in Milan.",
+map_btn: "Open in Google Maps 🗺️",
+back_home_btn: "Back to Home"
+},
+ar: {
+langLabel: "اللغة:",
+back_home: "← العودة للرئيسية",
+address_btn: "العناوين",
+contact_btn: "تواصل معنا",
+page_title: "عناوين المكاتب",
+location: "ميلانو، إيطاليا",
+main_office_title: "المكتب الرئيسي",
+main_office_desc: "📍 شارع روما، 170<br>20037 باديرنو دوجنانو، ميلانو",
+branch_office_title: "المكتب الفرعي",
+branch_office_desc: "تفاصيل وعنوان المكتب الفرعي في ميلانو.",
+map_btn: "فتح في خريطة جوجل 🗺️",
+back_home_btn: "العودة للرئيسية"
+}
+};
+
+function changeLanguage(lang) {
+const root = document.getElementById('html-root');
+if (lang === 'ar') {
+root.setAttribute('dir', 'rtl');
+root.setAttribute('lang', 'ar');
+} else {
+root.setAttribute('dir', 'ltr');
+root.setAttribute('lang', lang);
+}
+
+document.querySelectorAll('[data-translate]').forEach(element => {
+const key = element.getAttribute('data-translate');
+if (translations[lang] && translations[lang][key]) {
+element.innerHTML = translations[lang][key];
+}
+});
+
+const label = document.getElementById('lang-label');
+if (label && translations[lang]) {
+label.textContent = translations[lang].langLabel;
+}
+
+localStorage.setItem('selected_lang', lang);
+}
+
+// الحفاظ على اللغة المختارة عند التنقل بين الصفحات
+window.onload = function() {
+const savedLang = localStorage.getItem('selected_lang') || 'it';
+document.getElementById('lang-select').value = savedLang;
+changeLanguage(savedLang);
+};
+</script>
 </body>
 </html>
