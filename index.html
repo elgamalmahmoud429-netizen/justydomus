@@ -20,9 +20,9 @@ Studio Europa:
 <div class="language-selector">
 <label for="lang-select" id="lang-label">Language:</label>
 <select id="lang-select" onchange="changeLanguage(this.value)">
-<option value="it">Italiano</option>
-<option value="en">English</option>
-<option value="ar">العربية</option>
+<option value="it" id="opt-it">Italiano</option>
+<option value="en" id="opt-en">English</option>
+<option value="ar" id="opt-ar">العربية</option>
 </select>
 </div>
 </div>
@@ -30,12 +30,12 @@ Studio Europa:
 </header>
 
 <main class="main-content">
-<div class="container text-center">
-<!-- الشعار بحجم كبير ومناسب -->
-<div class="logo-container" style="margin-bottom: 20px;">
-<img src="logo.png" alt="Justy Domus Logo" class="main-logo" style="max-width: 220px; height: auto;">
+<!-- الشعار بعرض الشاشة بالكامل خارج الـ container -->
+<div class="full-width-logo-container">
+<img src="logo.png" alt="Justy Domus Logo" class="full-screen-logo">
 </div>
 
+<div class="container text-center">
 <h1 class="site-title">Justy Domus</h1>
 <p class="site-tagline" data-translate="site_tagline">Soluzioni Immobiliari e Servizi di Qualità</p>
 
@@ -60,6 +60,9 @@ Studio Europa:
 const translations = {
 it: {
 langLabel: "Lingua:",
+opt_it: "Italiano",
+opt_en: "Inglese",
+opt_ar: "Arabo",
 brand_subtitle: "Immobiliare & Servizi",
 address_btn: "Indirizzi",
 contact_btn: "Contatti",
@@ -73,14 +76,17 @@ service_3_desc: "Supporto tecnico, legale e finanziario per ogni vostra esigenza
 },
 en: {
 langLabel: "Language:",
+opt_it: "Italian",
+opt_en: "English",
+opt_ar: "Arabic",
 brand_subtitle: "Real Estate & Services",
 address_btn: "Addresses",
 contact_btn: "Contact Us",
+
+Studio Europa:
 site_tagline: "Quality Real Estate Solutions & Services",
 service_1_title: "Buying & Selling",
 service_1_desc: "Complete assistance for the purchase and sale of properties in Milan and surroundings.",
-
-Studio Europa:
 service_2_title: "Rentals & Management",
 service_2_desc: "Professional management of apartments and lease agreements.",
 service_3_title: "Consulting",
@@ -88,6 +94,9 @@ service_3_desc: "Technical, legal, and financial support for all your real estat
 },
 ar: {
 langLabel: "اللغة:",
+opt_it: "الإيطالية",
+opt_en: "الإنجليزية",
+opt_ar: "العربية",
 brand_subtitle: "العقارات والخدمات",
 address_btn: "العناوين",
 contact_btn: "تواصل معنا",
@@ -122,6 +131,10 @@ const label = document.getElementById('lang-label');
 if (label && translations[lang]) {
 label.textContent = translations[lang].langLabel;
 }
+
+document.getElementById('opt-it').textContent = translations[lang].opt_it;
+document.getElementById('opt-en').textContent = translations[lang].opt_en;
+document.getElementById('opt-ar').textContent = translations[lang].opt_ar;
 
 localStorage.setItem('selected_lang', lang);
 }
