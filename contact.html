@@ -1,40 +1,115 @@
 <!DOCTYPE html>
-<html lang="it" dir="ltr">
+<html lang="it" dir="ltr" id="html-root">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - Justy Domus</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Justy Domus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="top-bar">
-<div class="container lang-container">
-<a href="index.html" class="brand-subtitle" style="text-decoration: none;">← Back to Home / العودة للرئيسية</a>
-<div class="top-right-controls">
-<a href="addresses.html" class="nav-btn">Addresses</a>
-<a href="contact.html" class="nav-btn" style="color: #fff;">Contact Us</a>
-</div>
-</div>
-</header>
+    <header class="top-bar">
+        <div class="container lang-container">
+            <a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="back_home">← Back to Home</a>
+            <div class="top-right-controls">
+                <a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
+                <a href="contact.html" class="nav-btn" style="color: #fff;" data-translate="contact_btn">Contact Us</a>
+                
+                <div class="language-selector">
+                    <label for="lang-select" id="lang-label">Language:</label>
+                    <select id="lang-select" onchange="changeLanguage(this.value)">
+                        <option value="it">Italiano</option>
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<main class="main-content">
-<div class="container text-center" style="max-width: 700px; margin-top: 50px;">
-<h1 class="site-title">Contact Us / Contatti</h1>
-<p class="site-tagline">GET IN TOUCH WITH US</p>
+    <main class="main-content">
+        <div class="container text-center" style="max-width: 700px; margin-top: 50px;">
+            <h1 class="site-title" data-translate="page_title">Contact Us</h1>
+            <p class="site-tagline" data-translate="tagline">GET IN TOUCH WITH US</p>
+            
+            <div class="service-card" style="margin-top: 40px; text-align: center; padding: 40px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 25px; color: #1a1a1a;" data-translate="box_title">بيانات الاتصال الرسمية</h3>
+                <div class="contact-info" style="font-size: 1.2rem; line-height: 2;">
+                    <p>📧 Email: <a href="mailto:justydomus@gmail.com" style="color: #d4af37; font-weight: bold;">justydomus@gmail.com</a></p>
+                    <p>📞 Phone: <a href="tel:+393474364053" style="color: #d4af37; font-weight: bold;">+39 347 436 4053</a></p>
+                </div>
+                <br>
+                <a href="index.html" class="map-link" data-translate="back_home_btn">العودة للصفحة الرئيسية</a>
+            </div>
+        </div>
+    </main>
 
-<div class="service-card" style="margin-top: 40px; text-align: center; padding: 40px;">
-<h3 style="font-size: 1.5rem; margin-bottom: 25px; color: #1a1a1a;">بيانات الاتصال الرسمية</h3>
-<div class="contact-info" style="font-size: 1.2rem; line-height: 2;">
-<p>📧 Email: <a href="mailto:justydomus@gmail.com" style="color: #d4af37; font-weight: bold;">justydomus@gmail.com</a></p>
-<p>📞 Phone: <a href="tel:+393474364053" style="color: #d4af37; font-weight: bold;">+39 347 436 4053</a></p>
-</div>
-<br>
-<a href="index.html" class="map-link">العودة للصفحة الرئيسية</a>
-</div>
-</div>
-</main>
+    <script>
+        const translations = {
+            it: {
+                langLabel: "Lingua:",
+                back_home: "← Torna alla Home",
+                address_btn: "Indirizzi",
+                contact_btn: "Contatti",
+                page_title: "Contatti",
+                tagline: "METTITI IN CONTATTO CON NOI",
+                box_title: "Informazioni Ufficiali",
+                back_home_btn: "Torna alla Home"
+            },
+            en: {
+                langLabel: "Language:",
+                back_home: "← Back to Home",
+                address_btn: "Addresses",
+                contact_btn: "Contact Us",
+                page_title: "Contact Us",
+                tagline: "GET IN TOUCH WITH US",
+                box_title: "Official Contact Information",
+                back_home_btn: "Back to Home"
+            },
+            ar: {
+                langLabel: "اللغة:",
+                back_home: "← العودة للرئيسية",
+                address_btn: "العناوين",
+                contact_btn: "تواصل معنا",
+                page_title: "تواصل معنا",
+                tagline: "تواصل معنا عبر القنوات الرسمية",
+                box_title: "بيانات الاتصال الرسمية",
+                back_home_btn: "العودة للرئيسية"
+            }
+        };
 
+        function changeLanguage(lang) {
+            const root = document.getElementById('html-root');
+            if (lang === 'ar') {
+                root.setAttribute('dir', 'rtl');
+                root.setAttribute('lang', 'ar');
+            } else {
+                root.setAttribute('dir', 'ltr');
+                root.
+setAttribute('lang', lang);
+            }
+
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+            
+            const label = document.getElementById('lang-label');
+            if (label && translations[lang]) {
+                label.textContent = translations[lang].langLabel;
+            }
+
+            localStorage.setItem('selected_lang', lang);
+        }
+
+        window.onload = function() {
+            const savedLang = localStorage.getItem('selected_lang') || 'it';
+            document.getElementById('lang-select').value = savedLang;
+            changeLanguage(savedLang);
+        };
+    </script>
 </body>
 </html>
