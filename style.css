@@ -1,8 +1,9 @@
 body {
-margin: 0;
-font-family: 'Playfair Display', 'Cairo', serif;
+font-family: 'Cairo', sans-serif;
 background-color: #fbf9f4;
-color: #2c2c2c;
+color: #333;
+margin: 0;
+padding: 0;
 }
 
 .container {
@@ -11,73 +12,110 @@ max-width: 1200px;
 margin: 0 auto;
 }
 
+.text-center {
+text-align: center;
+}
+
+/* الشريط العلوي والشعار واختيار اللغة */
 .top-bar {
-background-color: #1a1a1a;
-color: #d4af37;
-padding: 10px 0;
-font-size: 14px;
+background-color: #111;
+padding: 12px 0;
+color: #fff;
+border-bottom: 2px solid #d4af37;
 }
 
 .lang-container {
 display: flex;
 justify-content: space-between;
 align-items: center;
+flex-direction: row !important;
+}
+
+.brand-subtitle {
+font-size: 0.95rem;
+color: #d4af37;
+font-weight: 600;
+}
+
+.top-right-controls {
+display: flex;
+align-items: center;
+gap: 25px;
+flex-direction: row !important;
+}
+
+.nav-contact-btn {
+color: #d4af37;
+text-decoration: none;
+font-weight: 600;
+font-size: 0.95rem;
+white-space: nowrap;
+transition: color 0.3s ease;
+}
+
+.nav-contact-btn:hover {
+color: #fff;
+}
+
+.language-selector {
+display: flex;
+align-items: center;
+gap: 8px;
+white-space: nowrap;
+}
+
+.language-selector label {
+font-size: 0.9rem;
+color: #ccc;
 }
 
 .language-selector select {
-background: #2c2c2c;
+background-color: #222;
 color: #fff;
 border: 1px solid #d4af37;
 padding: 5px 10px;
 border-radius: 4px;
+font-family: 'Cairo', sans-serif;
 cursor: pointer;
 }
 
+/* محتوى الموقع الرئيسي والشعار */
 .main-content {
 padding: 40px 0;
 }
 
-.text-center {
-text-align: center;
-}
-
 .logo-wrapper {
-max-width: 650px;
-margin: 0 auto 20px auto;
-box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-border-radius: 8px;
-overflow: hidden;
-border: 2px solid #d4af37;
+margin-bottom: 20px;
 }
 
 .main-logo {
-width: 100%;
+max-width: 150px;
 height: auto;
-display: block;
 }
 
 .site-title {
-font-size: 2.5rem;
+font-family: 'Playfair Display', serif;
+font-size: 2.8rem;
 color: #1a1a1a;
 margin: 10px 0 5px 0;
-letter-spacing: 2px;
 }
 
 .site-tagline {
 font-size: 1.1rem;
-color: #b89728;
-font-weight: bold;
-letter-spacing: 3px;
+letter-spacing: 2px;
+color: #d4af37;
+font-weight: 700;
 margin-bottom: 5px;
 }
 
 .site-location {
-font-size: 0.95rem;
+font-size: 0.9rem;
 color: #666;
-margin-bottom: 40px;
 letter-spacing: 1px;
+margin-bottom: 40px;
 }
 
+/* بطاقات الخدمات */
 .services-preview {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -87,33 +125,38 @@ margin-top: 30px;
 
 .service-card {
 background: #fff;
-padding: 20px;
-border-radius: 6px;
-border-top: 3px solid #d4af37;
-box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+padding: 25px 20px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+border-top: 4px solid #d4af37;
 text-align: left;
+transition: transform 0.3s ease;
 }
 
-/* دعم اتجاه اللغة العربية في البطاقات */
-[dir="rtl"] .service-card {
-text-align: right;
+.service-card:hover {
+transform: translateY(-5px);
 }
 
 .service-card h3 {
-font-size: 1.1rem;
+font-size: 1.15rem;
 color: #1a1a1a;
 margin-bottom: 10px;
+font-weight: 700;
 }
 
 .service-card p {
-font-size: 0.85rem;
+font-size: 0.9rem;
 color: #555;
-line-height: 1.5
+line-height: 1.5;
+margin: 0;
+}
+
+/* قسم تواصل معنا في الأسفل (Footer) */
 .site-footer {
 background-color: #1a1a1a;
 color: #fff;
 padding: 30px 0;
-margin-top: 50px;
+margin-top: 60px;
 border-top: 3px solid #d4af37;
 text-align: center;
 }
@@ -137,42 +180,18 @@ transition: color 0.3s;
 
 .contact-info a:hover {
 color: #d4af37;
-}top-right-controls {
-display: flex;
-align-items: center;
-gap: 20px;
 }
 
-.nav-contact-btn {
-color: #d4af37;
-text-decoration: none;
-font-weight: 600;
-transition: color 0.3s;
-}
-
-.nav-contact-btn:hover {
-color: #fff;
-}.lang-container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: nowrap; /* يمنع نزول العناصر لسطر جديد */
+/* دعم الأجهزة الذكية والصغيرة */
+@media (max-width: 768px) {
+.lang-container {
+flex-direction: column !important;
+gap: 10px;
+text-align: center;
 }
 
 .top-right-controls {
-display: flex;
-align-items: center;
-gap: 15px; /* المسافة بين زر Contact Us وقائمة اللغة */
-white-space: nowrap;
+width: 100%;
+justify-content: center;
 }
-
-.nav-contact-btn {
-color: #d4af37;
-text-decoration: none;
-font-weight: 600;
-transition: color 0.3s;
-}
-
-.nav-contact-btn:hover {
-color: #fff;
 }
