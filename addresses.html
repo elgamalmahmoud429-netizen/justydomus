@@ -20,9 +20,9 @@ Studio Europa:
 <div class="language-selector">
 <label for="lang-select" id="lang-label">Language:</label>
 <select id="lang-select" onchange="changeLanguage(this.value)">
-<option value="it">Italiano</option>
-<option value="en">English</option>
-<option value="ar">العربية</option>
+<option value="it" id="opt-it">Italiano</option>
+<option value="en" id="opt-en">English</option>
+<option value="ar" id="opt-ar">العربية</option>
 </select>
 </div>
 </div>
@@ -60,6 +60,9 @@ Studio Europa:
 const translations = {
 it: {
 langLabel: "Lingua:",
+opt_it: "Italiano",
+opt_en: "Inglese",
+opt_ar: "Arabo",
 brand_subtitle: "Justy Domus - Immobiliare & Servizi",
 address_btn: "Indirizzi",
 contact_btn: "Contatti",
@@ -74,14 +77,17 @@ back_home_btn: "Torna alla Home"
 },
 en: {
 langLabel: "Language:",
+opt_it: "Italian",
+opt_en: "English",
+opt_ar: "Arabic",
 brand_subtitle: "Justy Domus - Real Estate & Services",
+
+Studio Europa:
 address_btn: "Addresses",
 contact_btn: "Contact Us",
 page_title: "Our Offices",
 location: "MILAN, ITALY",
 main_office_title: "Main Office",
-
-Studio Europa:
 main_office_desc: "📍 Via Bruno Buozzi, 55<br>20097 Buozzi MI, Italy",
 branch_office_title: "Branch Office",
 branch_office_desc: "📍 Via Roma, 170<br>20037 Paderno Dugnano MI",
@@ -90,6 +96,9 @@ back_home_btn: "Back to Home"
 },
 ar: {
 langLabel: "اللغة:",
+opt_it: "الإيطالية",
+opt_en: "الإنجليزية",
+opt_ar: "العربية",
 brand_subtitle: "جستي دوموس - العقارات والخدمات",
 address_btn: "العناوين",
 contact_btn: "تواصل معنا",
@@ -125,6 +134,10 @@ const label = document.getElementById('lang-label');
 if (label && translations[lang]) {
 label.textContent = translations[lang].langLabel;
 }
+
+document.getElementById('opt-it').textContent = translations[lang].opt_it;
+document.getElementById('opt-en').textContent = translations[lang].opt_en;
+document.getElementById('opt-ar').textContent = translations[lang].opt_ar;
 
 localStorage.setItem('selected_lang', lang);
 }
