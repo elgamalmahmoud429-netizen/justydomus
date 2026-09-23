@@ -79,7 +79,7 @@ cursor: pointer;
 font-family: inherit;
 }
 
-/* الشعار يملأ الشاشة بالعرض تماماً مع ارتفاع ثابت وكامل */
+/* الشعار بعرض الشاشة بالكامل وبدون بهتان أو قص */
 .main-content {
 padding: 0 0 40px 0;
 }
@@ -87,17 +87,21 @@ padding: 0 0 40px 0;
 .full-width-logo-container {
 width: 100vw;
 margin-left: calc(-50vw + 50%);
-background-color: #1a1a1a;
+background-color: #1a1a1a; /* يندمج بلون الشريط الأسود العلوي */
 text-align: center;
 margin-bottom: 40px;
+padding: 0;
 overflow: hidden;
 }
 
 .full-screen-logo {
-width: 100vw; /* يأخذ عرض الشاشة بالكامل */
-height: 420px; /* تثبيت ارتفاع محدد ومرتب */
-object-fit: fill; /* يمدد الصورة أفقياً لتأخذ العرض بالكامل دون قص الأطراف أو الأعلى والأسفل */
+width: 100%;
+max-width: 1400px;
+height: auto;
+max-height: 480px;
+object-fit: contain; /* يحافظ على جودة الصورة والألوان وزاهية دون أي بهتان أو مط */
 display: block;
+margin: 0 auto;
 }
 
 .site-title {
@@ -172,9 +176,5 @@ text-align: center;
 
 .top-right-controls {
 justify-content: center;
-}
-
-.full-screen-logo {
-height: 250px; /* تقليل الارتفاع تلقائياً على الشاشات الصغيرة */
 }
 }
