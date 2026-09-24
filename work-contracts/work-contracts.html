@@ -1,187 +1,113 @@
-Studio Europa:
 <!DOCTYPE html>
-<html lang="it" dir="ltr" id="html-root" translate="no">
+<html lang="ar" dir="rtl" id="html-root">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work Contracts - Justy Domus</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<title>عقود العمل - Justy Domus</title>
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Cairo', sans-serif;
+background-color: #f9f9f9;
+color: #333;
+margin: 0;
+padding: 0;
+}
+.container-gallery {
+max-width: 1100px;
+margin: 40px auto;
+padding: 0 20px;
+text-align: center;
+}
+.gallery-title {
+font-size: 2rem;
+color: #2c3e50;
+margin-bottom: 10px;
+font-weight: 700;
+}
+.gallery-subtitle {
+color: #666;
+margin-bottom: 40px;
+font-size: 1.1rem;
+}
+.images-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 30px;
+justify-content: center;
+}
+.img-card {
+background: #ffffff;
+padding: 15px;
+border-radius: 12px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border: 1px solid #eaeaea;
+}
+.img-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+.img-card img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+display: block;
+}
+.back-btn-container {
+margin: 50px 0;
+}
+.btn-custom {
+display: inline-block;
+background: #2c3e50;
+color: #fff;
+padding: 12px 30px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 600;
+transition: background 0.3s;
+}
+.btn-custom:hover {
+background: #d4af37;
+color: #fff;
+}
+</style>
 </head>
 <body>
 
-<header class="top-bar">
-<div class="container lang-container">
-<a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="brand_subtitle">JUSTY DOMUS</a>
-<div class="top-right-controls">
-<a href="index.html" class="nav-btn" data-translate="nav_home">Home</a>
-<a href="about.html" class="nav-btn" data-translate="nav_about">About Us</a>
-<a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
-<a href="results.html" class="nav-btn" style="color: #d4af37;" data-translate="nav_results">Our Results</a>
-<a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
-
-<div class="language-selector">
-<label for="lang-select" id="lang-label" data-translate="lang_label">Language:</label>
-<select id="lang-select" onchange="changeLanguage(this.value)">
-<option value="it" id="opt-it">Italiano</option>
-<option value="en" id="opt-en">English</option>
-<option value="ar" id="opt-ar">العربية</option>
-</select>
-</div>
+<!-- شريط التنقل العلوي بدون أي أثر لـ Studio Europa -->
+<header class="top-bar" style="background: #fff; padding: 15px 0; border-bottom: 1px solid #eee;">
+<div class="container lang-container" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+<a href="../index.html" class="brand-subtitle" style="text-decoration: none; font-weight: bold; color: #2c3e50; font-size: 1.3rem;">JUSTY DOMUS</a>
+<div class="top-right-controls" style="display: flex; gap: 15px; align-items: center;">
+<a href="../index.html" style="text-decoration: none; color: #555;">الرئيسية</a>
+<a href="../italy.html" style="text-decoration: none; color: #555;">خدمات إيطاليا</a>
+<a href="../results.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">أعمالنا ونتائجنا</a>
 </div>
 </div>
 </header>
 
-<main class="main-content" style="padding-top: 0;">
-<section class="results-hero">
-<div class="container text-center hero-content-box">
-<span style="font-size: 3rem; display: block; margin-bottom: 10px;">💼</span>
-<h1 class="results-hero-title" data-translate="page_title">عقود العمل والتوظيف</h1>
-<p class="results-hero-sub" data-translate="page_subtitle">استعراض نماذج وملفات عقود العمل المنجزة والمدعومة من فريق JUSTY DOMUS.</p>
-</div>
-</section>
+<!-- محتوى الصفحة وعرض الصور -->
+<main class="container-gallery">
+<h1 class="gallery-title">عقود العمل المنجزة</h1>
+<p class="gallery-subtitle">استعراض نماذج وملفات عقود العمل والتوظيف الرسمية المدعومة من فريقنا.</p>
 
-<div class="container services-detailed-section" style="margin-top: 40px; margin-bottom: 60px;">
-<div class="services-grid">
-<div class="service-card">
-<h3 data-translate="card_1_title">إجراءات استخراج التوظيف</h3>
-<p data-translate="card_1_desc">متابعة كاملة لمتطلبات الجهات الرسمية وتوثيق العقود.</p>
+<div class="images-grid">
+<!-- الصورة الأولى -->
+<div class="img-card">
+<img src="contract1.jpg" alt="عقد عمل 1">
 </div>
-<div class="service-card">
-<h3 data-translate="card_2_title">تنسيق المواعيد بالسفارات</h3>
-<p data-translate="card_2_desc">ترتيب المواعيد وتجهيز الملفات الدبلوماسية والقنصلية.</p>
+<!-- الصورة الثانية -->
+<div class="img-card">
+<img src="contract2.jpg" alt="عقد عمل 2">
 </div>
 </div>
 
-<div class="text-center" style="margin-top: 50px;">
-<a href="results.html" class="map-link" data-translate="back_btn">العودة لصفحة النتائج</a>
-</div>
+<div class="back-btn-container">
+<a href="../italy.html" class="btn-custom">العودة لخدمات إيطاليا</a>
 </div>
 </main>
 
-<footer class="site-footer">
-<div class="container footer-grid">
-<div class="footer-col">
-<h3 data-translate="brand_subtitle">JUSTY DOMUS</h3>
-<p data-translate="footer_brand_desc">Professional Services in Europe</p>
-</div>
-<div class="footer-col">
-<h4 data-translate="footer_nav_title">Navigation</h4>
-<ul>
-<li><a href="index.html" data-translate="nav_home">Home</a></li>
-<li><a href="results.html" data-translate="nav_results">Our Results</a></li>
-<li><a href="contact.html" data-translate="contact_btn">Contact</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h4 data-translate="footer_services_title">Services</h4>
-<ul>
-
-Studio Europa:
-<li data-translate="footer_s1">Immigration & Regularization</li>
-<li data-translate="footer_s2">Work Contracts</li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom text-center">
-<p>&copy; 2026 JUSTY DOMUS. All rights reserved.</p>
-</div>
-</footer>
-
-<script>
-const translations = {
-it: {
-lang_label: "Lingua:",
-opt_it: "Italiano",
-opt_en: "Inglese",
-opt_ar: "Arabo",
-brand_subtitle: "JUSTY DOMUS",
-nav_home: "Home",
-nav_about: "Chi Siamo",
-address_btn: "Indirizzi",
-nav_results: "I Nostri Risultati",
-contact_btn: "Contatti",
-page_title: "Contratti di Lavoro",
-page_subtitle: "Panoramica dei contratti di lavoro e dei servizi di collocamento gestiti da JUSTY DOMUS.",
-card_1_title: "Procedure di Assunzione",
-card_1_desc: "Assistenza completa per la conformità legale e la documentazione contrattuale.",
-card_2_title: "Coordinamento Consolare",
-card_2_desc: "Gestione degli appuntamenti e preparazione della documentazione per i visti.",
-back_btn: "Torna ai Risultati",
-footer_brand_desc: "Servizi Professionali in Europa"
-},
-en: {
-lang_label: "Language:",
-opt_it: "Italian",
-opt_en: "English",
-opt_ar: "Arabic",
-brand_subtitle: "JUSTY DOMUS",
-nav_home: "Home",
-nav_about: "About Us",
-address_btn: "Addresses",
-nav_results: "Our Results",
-contact_btn: "Contact Us",
-page_title: "Work Contracts & Employment",
-page_subtitle: "Overview of employment contracts and placement services managed by JUSTY DOMUS.",
-card_1_title: "Hiring Procedures",
-card_1_desc: "Complete assistance for legal compliance and contract documentation.",
-card_2_title: "Consular Coordination",
-card_2_desc: "Appointment management and visa documentation preparation.",
-back_btn: "Back to Results",
-footer_brand_desc: "Professional Services in Europe"
-},
-ar: {
-lang_label: "اللغة:",
-opt_it: "الإيطالية",
-opt_en: "الإنجليزية",
-opt_ar: "العربية",
-brand_subtitle: "جستي دوموس",
-nav_home: "الرئيسية",
-nav_about: "من نحن",
-address_btn: "العناوين",
-nav_results: "أعمالنا ونتائجنا",
-contact_btn: "تواصل معنا",
-page_title: "عقود العمل والتوظيف",
-page_subtitle: "استعراض نماذج وملفات عقود العمل المنجزة والمدعومة من فريق JUSTY DOMUS.",
-card_1_title: "إجراءات استخراج التوظيف",
-card_1_desc: "متابعة كاملة لمتطلبات الجهات الرسمية وتوثيق العقود.",
-card_2_title: "تنسيق المواعيد بالسفارات",
-card_2_desc: "ترتيب المواعيد وتجهيز الملفات الدبلوماسية والقنصلية.",
-back_btn: "العودة لصفحة النتائج",
-footer_brand_desc: "خدمات مهنية في أوروبا"
-}
-};
-
-function changeLanguage(lang) {
-const root = document.getElementById('html-root');
-if (lang === 'ar') {
-root.setAttribute('dir', 'rtl');
-root.setAttribute('lang', 'ar');
-} else {
-root.setAttribute('dir', 'ltr');
-root.setAttribute('lang', lang);
-}
-document.querySelectorAll('[data-translate]').forEach(element => {
-const key = element.getAttribute('data-translate');
-if (translations[lang] && translations[lang][key]) {
-element.
-
-Studio Europa:
-innerHTML = translations[lang][key];
-}
-});
-document.getElementById('lang-label').textContent = translations[lang].lang_label;
-document.getElementById('opt-it').textContent = translations[lang].opt_it;
-document.getElementById('opt-en').textContent = translations[lang].opt_en;
-document.getElementById('opt-ar').textContent = translations[lang].opt_ar;
-localStorage.setItem('selected_lang', lang);
-}
-
-window.onload = function() {
-const savedLang = localStorage.getItem('selected_lang') || 'it';
-document.getElementById('lang-select').value = savedLang;
-changeLanguage(savedLang);
-};
-</script>
 </body>
 </html>
