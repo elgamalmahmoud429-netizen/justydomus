@@ -1,120 +1,169 @@
+Studio Europa:
 <!DOCTYPE html>
-<html lang="it" dir="ltr" id="html-root">
+<html lang="it" dir="ltr" id="html-root" translate="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Justy Domus</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work Contracts - Justy Domus</title>
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+.gallery-container {
+max-width: 1000px;
+margin: 40px auto;
+padding: 0 20px;
+}
+.image-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+margin-top: 30px;
+}
+.image-card {
+background: #fff;
+padding: 15px;
+border-radius: 12px;
+box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+.image-card:hover {
+transform: translateY(-5px);
+}
+.image-card img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+border: 1px solid #eee;
+}
+</style>
 </head>
 <body>
 
-    <header class="top-bar">
-        <div class="container lang-container">
-            <a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="back_home">← Back to Home</a>
-            <div class="top-right-controls">
-                <a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
-                <a href="contact.html" class="nav-btn" style="color: #fff;" data-translate="contact_btn">Contact Us</a>
-                
-                <div class="language-selector">
-                    <label for="lang-select" id="lang-label">Language:</label>
-                    <select id="lang-select" onchange="changeLanguage(this.value)">
-                        <option value="it">Italiano</option>
-                        <option value="en">English</option>
-                        <option value="ar">العربية</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </header>
+<header class="top-bar">
+<div class="container lang-container">
+<a href="../index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="brand_subtitle">JUSTY DOMUS</a>
+<div class="top-right-controls">
+<a href="../index.html" class="nav-btn" data-translate="nav_home">Home</a>
+<a href="../about.html" class="nav-btn" data-translate="nav_about">About Us</a>
+<a href="../addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
+<a href="../results.html" class="nav-btn" style="color: #d4af37;" data-translate="nav_results">Our Results</a>
+<a href="../contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
 
-    <main class="main-content">
-        <div class="container text-center" style="max-width: 700px; margin-top: 50px;">
-            <h1 class="site-title" data-translate="page_title">Contact Us</h1>
-            <p class="site-tagline" data-translate="tagline">GET IN TOUCH WITH US</p>
-            
-            <div class="service-card" style="margin-top: 40px; text-align: center; padding: 40px;">
-                <h3 style="font-size: 1.5rem; margin-bottom: 25px; color: #1a1a1a;" data-translate="box_title">بيانات الاتصال الرسمية</h3>
-                <div class="contact-info" style="font-size: 1.2rem; line-height: 2;">
-                    <p>📧 Email: <a href="mailto:justydomus@gmail.com" style="color: #d4af37; font-weight: bold;">justydomus@gmail.com</a></p>
-                    <p>📞 Phone: <a href="tel:+393474364053" style="color: #d4af37; font-weight: bold;">+39 347 436 4053</a></p>
-                </div>
-                <br>
-                <a href="index.html" class="map-link" data-translate="back_home_btn">العودة للصفحة الرئيسية</a>
-            </div>
-        </div>
-    </main>
+<div class="language-selector">
+<label for="lang-select" id="lang-label" data-translate="lang_label">Language:</label>
+<select id="lang-select" onchange="changeLanguage(this.value)">
+<option value="it" id="opt-it">Italiano</option>
+<option value="en" id="opt-en">English</option>
+<option value="ar" id="opt-ar">العربية</option>
+</select>
+</div>
+</div>
+</div>
+</header>
 
-    <script>
-        const translations = {
-            it: {
-                langLabel: "Lingua:",
-                back_home: "← Torna alla Home",
-                address_btn: "Indirizzi",
-                contact_btn: "Contatti",
-                page_title: "Contatti",
-                tagline: "METTITI IN CONTATTO CON NOI",
-                box_title: "Informazioni Ufficiali",
-                back_home_btn: "Torna alla Home"
-            },
-            en: {
-                langLabel: "Language:",
-                back_home: "← Back to Home",
-                address_btn: "Addresses",
-                contact_btn: "Contact Us",
-                page_title: "Contact Us",
-                tagline: "GET IN TOUCH WITH US",
-                box_title: "Official Contact Information",
-                back_home_btn: "Back to Home"
-            },
-            ar: {
-                langLabel: "اللغة:",
-                back_home: "← العودة للرئيسية",
-                address_btn: "العناوين",
-                contact_btn: "تواصل معنا",
-                page_title: "تواصل معنا",
-                tagline: "تواصل معنا عبر القنوات الرسمية",
-                box_title: "بيانات الاتصال الرسمية",
-                back_home_btn: "العودة للرئيسية"
-            }
-        };
+<main class="main-content" style="padding-top: 0;">
+<section class="results-hero">
+<div class="container text-center hero-content-box">
+<span style="font-size: 3rem; display: block; margin-bottom: 10px;">💼</span>
+<h1 class="results-hero-title" data-translate="page_title">عقود العمل والتوظيف</h1>
+<p class="results-hero-sub" data-translate="page_subtitle">استعراض نماذج وملفات عقود العمل المنجزة والمدعومة من فريق JUSTY DOMUS.</p>
+</div>
+</section>
 
-        function changeLanguage(lang) {
-            const root = document.getElementById('html-root');
-            if (lang === 'ar') {
-                root.setAttribute('dir', 'rtl');
-                root.setAttribute('lang', 'ar');
-            } else {
-                root.setAttribute('dir', 'ltr');
-                root.
-setAttribute('lang', lang);
-            }
+<!-- قسم عرض صور العقود -->
+<div class="gallery-container">
+<div class="image-grid">
+<!-- الصورة الأولى -->
+<div class="image-card">
+<img src="contract1.jpg" alt="Work Contract 1">
+</div>
+<!-- الصورة الثانية -->
+<div class="image-card">
+<img src="contract2.jpg" alt="Work Contract 2">
+</div>
+</div>
+</div>
 
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (translations[lang] && translations[lang][key]) {
-                    element.innerHTML = translations[lang][key];
-                }
-            });
-            
-            const label = document.getElementById('lang-label');
-            if (label && translations[lang]) {
-                label.textContent = translations[lang].langLabel;
-            }
+<div class="text-center" style="margin-bottom: 60px;">
+<a href="../results.html" class="map-link" data-translate="back_btn">العودة لصفحة النتائج</a>
+</div>
+</main>
 
-            localStorage.setItem('selected_lang', lang);
-        }
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-col">
+<h3 data-translate="brand_subtitle">JUSTY DOMUS</h3>
+<p data-translate="footer_brand_desc">Professional Services in Europe</p>
 
-        window.onload = function() {
-            const savedLang = localStorage.getItem('selected_lang') || 'it';
-            document.getElementById('lang-select').value = savedLang;
-            changeLanguage(savedLang);
-        };
-    </script>
+Studio Europa:
+</div>
+<div class="footer-col">
+<h4 data-translate="footer_nav_title">Navigation</h4>
+<ul>
+<li><a href="../index.html" data-translate="nav_home">Home</a></li>
+<li><a href="../results.html" data-translate="nav_results">Our Results</a></li>
+<li><a href="../contact.html" data-translate="contact_btn">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom text-center">
+<p>&copy; 2026 JUSTY DOMUS. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+const translations = {
+it: {
+lang_label: "Lingua:", opt_it: "Italiano", opt_en: "Inglese", opt_ar: "Arabo",
+brand_subtitle: "JUSTY DOMUS", nav_home: "Home", nav_about: "Chi Siamo",
+address_btn: "Indirizzi", nav_results: "I Nostri Risultati", contact_btn: "Contatti",
+page_title: "Contratti di Lavoro",
+page_subtitle: "Panoramica dei contratti di lavoro e dei servizi di collocamento gestiti da JUSTY DOMUS.",
+back_btn: "Torna ai Risultati", footer_brand_desc: "Servizi Professionali in Europa"
+},
+en: {
+lang_label: "Language:", opt_it: "Italian", opt_en: "English", opt_ar: "Arabic",
+brand_subtitle: "JUSTY DOMUS", nav_home: "Home", nav_about: "About Us",
+address_btn: "Addresses", nav_results: "Our Results", contact_btn: "Contact Us",
+page_title: "Work Contracts & Employment",
+page_subtitle: "Overview of employment contracts and placement services managed by JUSTY DOMUS.",
+back_btn: "Back to Results", footer_brand_desc: "Professional Services in Europe"
+},
+ar: {
+lang_label: "اللغة:", opt_it: "الإيطالية", opt_en: "الإنجليزية", opt_ar: "العربية",
+brand_subtitle: "جستي دوموس", nav_home: "الرئيسية", nav_about: "من نحن",
+address_btn: "العناوين", nav_results: "أعمالنا ونتائجنا", contact_btn: "تواصل معنا",
+page_title: "عقود العمل والتوظيف",
+page_subtitle: "استعراض نماذج وملفات عقود العمل المنجزة والمدعومة من فريق JUSTY DOMUS.",
+back_btn: "العودة لصفحة النتائج", footer_brand_desc: "خدمات مهنية في أوروبا"
+}
+};
+
+function changeLanguage(lang) {
+const root = document.getElementById('html-root');
+if (lang === 'ar') {
+root.setAttribute('dir', 'rtl'); root.setAttribute('lang', 'ar');
+} else {
+root.setAttribute('dir', 'ltr'); root.setAttribute('lang', lang);
+}
+document.querySelectorAll('[data-translate]').forEach(element => {
+const key = element.getAttribute('data-translate');
+if (translations[lang] && translations[lang][key]) {
+element.innerHTML = translations[lang][key];
+}
+});
+document.getElementById('lang-label').textContent = translations[lang].lang_label;
+document.getElementById('opt-it').textContent = translations[lang].opt_it;
+document.getElementById('opt-en').textContent = translations[lang].opt_en;
+document.getElementById('opt-ar').textContent = translations[lang].opt_ar;
+localStorage.setItem('selected_lang', lang);
+}
+
+window.onload = function() {
+const savedLang = localStorage.getItem('selected_lang') || 'it';
+document.getElementById('lang-select').value = savedLang;
+changeLanguage(savedLang);
+};
+</script>
 </body>
 </html>
-<a href="index.html" class="nav-btn" data-translate="nav_home">Home</a>
-<a href="about.html" class="nav-btn" data-translate="nav_about">About Us</a>
-<a href="addresses.html" class="nav-btn" data-translate="address_btn">Addresses</a>
-<a href="results.html" class="nav-btn" data-translate="nav_results">Our Results</a>
-<a href="contact.html" class="nav-btn" data-translate="contact_btn">Contact Us</a>
