@@ -7,10 +7,49 @@ Studio Europa:
 <title>Italy Services - Justy Domus</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* تنسيق البطاقات القابلة للضغط لتكون احترافية تماماً */
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+max-width: 1200px;
+margin: 40px auto;
+padding: 0 20px;
+}
+.service-card-link {
+text-decoration: none;
+color: inherit;
+display: block;
+background: #fff;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border: 1px solid #eaeaea;
+}
+.service-card-link:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+border-color: #d4af37;
+}
+.service-card-link h3 {
+color: #2c3e50;
+margin-bottom: 15px;
+font-size: 1.4rem;
+}
+.service-card-link ul {
+padding-right: 20px;
+text-align: right;
+color: #555;
+}
+.service-card-link ul li {
+margin-bottom: 8px;
+}
+</style>
 </head>
 <body>
 
-<!-- شريط التنقل العلوي -->
 <header class="top-bar">
 <div class="container lang-container">
 <a href="index.html" class="brand-subtitle" style="text-decoration: none;" data-translate="brand_subtitle">JUSTY DOMUS</a>
@@ -34,82 +73,67 @@ Studio Europa:
 </header>
 
 <main class="main-content" style="padding-top: 0;">
-<!-- قسم الهيرو للدولة -->
 <section class="results-hero">
 <div class="container text-center hero-content-box">
-<span style="font-size: 3rem; display: block; margin-bottom: 10px;">🇮🇹</span>
-<h1 class="results-hero-title" data-translate="page_title">خدمات وملفات إيطاليا</h1>
-<p class="results-hero-sub" data-translate="page_subtitle">نستعرض هنا تفاصيل الملفات والخدمات المنجزة في إيطاليا (عقود عمل، إقامات، وقبول دراسي).</p>
+<h1 class="results-hero-title" data-translate="page_title">خدمات إيطاليا</h1>
+<p class="results-hero-sub" data-translate="page_subtitle">استعرض هنا تفاصيل الملفات والخدمات المنجزة في إيطاليا (عقود عمل، إقامات، وقبول دراسي).</p>
 </div>
 </section>
 
-<!-- تفاصيل الخدمات والملفات داخل إيطاليا -->
-<div class="container services-detailed-section" style="margin-top: 40px; margin-bottom: 60px;">
+<!-- شبكة البطاقات -->
 <div class="services-grid">
-
-<!-- عقود العمل -->
-<div class="service-card">
-<h3 data-translate="service_1_title">💼 عقود العمل في إيطاليا</h3>
-<ul>
-<li data-translate="service_1_li1">متابعة إجراءات استخراج التوظيف</li>
-<li data-translate="service_1_li2">تنسيق مواعيد السفارة والقنصلية</li>
-<li data-translate="service_1_li3">مراجعة وتوثيق عقود العمل</li>
+<!-- 1. عقود العمل (تؤدي إلى فولدر عقود العمل والصور) -->
+<a href="work-contracts/work-contracts.html" class="service-card-link">
+<div style="font-size: 2.5rem; margin-bottom: 10px;">💼</div>
+<h3 data-translate="card_1_title">عقود العمل في إيطاليا</h3>
+<ul data-translate="card_1_list">
+<li>متابعة إجراءات استخراج التوظيف</li>
+<li>تنسيق مواعيد السفارة والقنصلية</li>
+<li>مراجعة وتوثيق عقود العمل</li>
 </ul>
-</div>
-
-<!-- الإقامات -->
-<div class="service-card">
-<h3 data-translate="service_2_title">📄 إقامات وتصاريح إيطاليا</h3>
-<ul>
-<li data-translate="service_2_li1">تجديد تصاريح الإقامة المختلفة</li>
-<li data-translate="service_2_li2">إجراءات لم شمل العائلة</li>
-<li data-translate="service_2_li3">تقنين الأوضاع والمعاملات البيروقراطية</li>
-</ul>
-</div>
-
-<!-- القبول الدراسي -->
-<div class="service-card">
-<h3 data-translate="service_3_title">🎓 القبول الدراسي والجامعي</h3>
-<ul>
-<li data-translate="service_3_li1">الحصول على قبولات الجامعات الإيطالية</li>
-<li data-translate="service_3_li2">تnsيق ملفات التسجيل والدراسة</li>
 
 Studio Europa:
-<li data-translate="service_3_li3">دعم إجراءات التأشيرة الدراسية</li>
+</a>
+
+<!-- 2. الإقامات -->
+<a href="residence/residence.html" class="service-card-link">
+<div style="font-size: 2.5rem; margin-bottom: 10px;">📄</div>
+<h3 data-translate="card_2_title">إقامات وتصاريح إيطاليا</h3>
+<ul data-translate="card_2_list">
+<li>تجديد تصاريح الإقامة المختلفة</li>
+<li>إجراءات لم شمل العائلة</li>
+<li>تأمين الأوضاع والمعاملات البيروقراطية</li>
 </ul>
+</a>
+
+<!-- 3. القبول الدراسي -->
+<a href="study-admissions/study-admissions.html" class="service-card-link">
+<div style="font-size: 2.5rem; margin-bottom: 10px;">🎓</div>
+<h3 data-translate="card_3_title">القبول الدراسي والجامعي</h3>
+<ul data-translate="card_3_list">
+<li>الحصول على قبولات الجامعات الإيطالية</li>
+<li>تنسيق ملفات التسجيل والدراسة</li>
+</ul>
+</a>
 </div>
 
-</div>
-
-<div class="text-center" style="margin-top: 50px;">
+<div class="text-center" style="margin: 50px 0;">
 <a href="results.html" class="map-link" data-translate="back_btn">العودة لصفحة النتائج</a>
-</div>
 </div>
 </main>
 
-<!-- الفوتر -->
 <footer class="site-footer">
 <div class="container footer-grid">
 <div class="footer-col">
 <h3 data-translate="brand_subtitle">JUSTY DOMUS</h3>
-<p data-translate="footer_brand_desc">Professional Services in Italy</p>
+<p data-translate="footer_brand_desc">Professional Services in Europe</p>
 </div>
 <div class="footer-col">
 <h4 data-translate="footer_nav_title">Navigation</h4>
 <ul>
 <li><a href="index.html" data-translate="nav_home">Home</a></li>
-<li><a href="about.html" data-translate="nav_about">About</a></li>
 <li><a href="results.html" data-translate="nav_results">Our Results</a></li>
 <li><a href="contact.html" data-translate="contact_btn">Contact</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h4 data-translate="footer_services_title">Services</h4>
-<ul>
-<li data-translate="footer_s1">Immigration & Regularization</li>
-<li data-translate="footer_s2">CAF Services</li>
-<li data-translate="footer_s3">Real Estate & Auctions</li>
-<li data-translate="footer_s4">Company Services</li>
 </ul>
 </div>
 </div>
@@ -118,161 +142,62 @@ Studio Europa:
 </div>
 </footer>
 
-<!-- الترجمة التلقائية -->
 <script>
 const translations = {
 it: {
-lang_label: "Lingua:",
-opt_it: "Italiano",
-opt_en: "Inglese",
-opt_ar: "Arabo",
-brand_subtitle: "JUSTY DOMUS",
-nav_home: "Home",
-nav_about: "Chi Siamo",
-address_btn: "Indirizzi",
-nav_results: "I Nostri Risultati",
-contact_btn: "Contatti",
-
-page_title: "Servizi e Pratiche in Italia",
-page_subtitle: "Visualizza qui i dettagli dei servizi e delle pratiche completate con successo in Italia.",
-
-service_1_title: "💼 Contratti di Lavoro in Italia",
-service_1_li1: "Monitoraggio delle procedure di assunzione",
-service_1_li2: "Coordinamento appuntamenti consolari",
-service_1_li3: "Revisione e legalizzazione contratti",
-
-service_2_title: "📄 Permessi di Soggiorno",
-service_2_li1: "Rinnovo dei permessi di soggiorno",
-service_2_li2: "Procedure di ricongiungimento familiare",
-service_2_li3: "Pratiche di regolarizzazione e burocratiche",
-
-service_3_title: "🎓 Ammissioni Studio e Università",
-service_3_li1: "Ottenimento ammissioni universitarie",
-service_3_li2: "Coordinamento pratiche di immatricolazione",
-service_3_li3: "Supporto per visto di studio",
-
-back_btn: "Torna ai Risultati",
-
-footer_brand_desc: "Servizi Professionali in Italia",
-footer_nav_title: "Navigazione",
-footer_services_title: "Servizi",
-footer_s1: "Immigrazione e Regolarizzazione",
-footer_s2: "Servizi CAF",
-footer_s3: "Immobili e Aste",
-footer_s4: "Servizi Aziendali"
+lang_label: "Lingua:", opt_it: "Italiano", opt_en: "Inglese", opt_ar: "Arabo",
+brand_subtitle: "JUSTY DOMUS", nav_home: "Home", nav_about: "Chi Siamo",
+address_btn: "Indirizzi", nav_results: "I Nostri Risultati", contact_btn: "Contatti",
+page_title: "Servizi Italia",
+page_subtitle: "Esplora i dettagli delle pratiche e dei servizi gestiti in Italia.",
+card_1_title: "Contratti di Lavoro", card_1_list: "<li>Gestione pratiche di assunzione</li><li>Coordinamento appuntamenti consolari</li><li>Verifica e legalizzazione contratti</li>",
+card_2_title: "Permessi di Soggiorno", card_2_list: "<li>Rinnovo permessi di soggiorno</li><li>Procedure di ricongiungimento familiare</li><li>Assistenza burocratica completa</li>",
+card_3_title: "Ammissioni Studio", card_3_list: "<li>Ottenimento ammissioni universitarie</li><li>Supporto immatricolazione e studio</li>",
+back_btn: "Torna ai Risultati", footer_brand_desc: "Servizi Professionali in Europa"
 },
 en: {
-lang_label: "Language:",
-opt_it: "Italian",
-opt_en: "English",
-opt_ar: "Arabic",
-brand_subtitle: "JUSTY DOMUS",
-nav_home: "Home",
+lang_label: "Language:", opt_it: "Italian", opt_en: "English", opt_ar: "Arabic",
+brand_subtitle: "JUSTY DOMUS", nav_home: "Home", nav_about: "About Us",
+address_btn: "Addresses", nav_results: "Our Results", contact_btn: "Contact Us",
+page_title: "Italy Services",
+page_subtitle: "Explore details of practices and services managed in Italy.",
+card_1_title: "Work Contracts", card_1_list: "<li>Employment procedure tracking</li><li>Consular appointment coordination</li><li>Contract review and authentication</li>",
 
 Studio Europa:
-nav_about: "About Us",
-address_btn: "Addresses",
-nav_results: "Our Results",
-contact_btn: "Contact Us",
-
-page_title: "Italy Services & Files",
-page_subtitle: "Explore details of services and files successfully completed in Italy.",
-
-service_1_title: "💼 Work Contracts in Italy",
-service_1_li1: "Hiring procedure tracking",
-service_1_li2: "Consular appointment coordination",
-service_1_li3: "Contract review and documentation",
-
-service_2_title: "📄 Residence Permits",
-service_2_li1: "Residence permit renewals",
-service_2_li2: "Family reunification procedures",
-service_2_li3: "Regularization and bureaucratic practices",
-
-service_3_title: "🎓 Study & University Admissions",
-service_3_li1: "University admission acquisition",
-service_3_li2: "Enrollment coordination support",
-service_3_li3: "Study visa assistance",
-
-back_btn: "Back to Results",
-
-footer_brand_desc: "Professional Services in Italy",
-footer_nav_title: "Navigation",
-footer_services_title: "Services",
-footer_s1: "Immigration & Regularization",
-footer_s2: "CAF Services",
-footer_s3: "Real Estate & Auctions",
-footer_s4: "Company Services"
+card_2_title: "Residence Permits", card_2_list: "<li>Residence permit renewals</li><li>Family reunification procedures</li><li>Bureaucratic assistance</li>",
+card_3_title: "Study Admissions", card_3_list: "<li>University admission procurement</li><li>Registration and study file support</li>",
+back_btn: "Back to Results", footer_brand_desc: "Professional Services in Europe"
 },
 ar: {
-lang_label: "اللغة:",
-opt_it: "الإيطالية",
-opt_en: "الإنجليزية",
-opt_ar: "العربية",
-brand_subtitle: "جستي دوموس",
-nav_home: "الرئيسية",
-nav_about: "من نحن",
-address_btn: "العناوين",
-nav_results: "أعمالنا ونتائجنا",
-contact_btn: "تواصل معنا",
-
-page_title: "خدمات وملفات إيطاليا",
-page_subtitle: "نستعرض هنا تفاصيل الملفات والخدمات المنجزة في إيطاليا (عقود عمل، إقامات، وقبول دراسي).",
-
-service_1_title: "💼 عقود العمل في إيطاليا",
-service_1_li1: "متابعة إجراءات استخراج التوظيف",
-service_1_li2: "تنسيق مواعيد السفارة والقنصلية",
-service_1_li3: "مراجعة وتوثيق عقود العمل",
-
-service_2_title: "📄 إقامات وتصاريح إيطاليا",
-service_2_li1: "تجديد تصاريح الإقامة المختلفة",
-service_2_li2: "إجراءات لم شمل العائلة",
-service_2_li3: "تقنين الأوضاع والمعاملات البيروقراطية",
-
-service_3_title: "🎓 القبول الدراسي والجامعي",
-service_3_li1: "الحصول على قبولات الجامعات الإيطالية",
-service_3_li2: "تنسيق ملفات التسجيل والدراسة",
-service_3_li3: "دعم إجراءات التأشيرة الدراسية",
-
-back_btn: "العودة لصفحة النتائج",
-
-footer_brand_desc: "خدمات مهنية في إيطاليا",
-footer_nav_title: "التنقل",
-footer_services_title: "الخدمات",
-footer_s1: "الهجرة وتقنين الأوضاع",
-footer_s2: "خدمات CAF",
-footer_s3: "العقارات والمزادات",
-footer_s4: "خدمات الشركات"
+lang_label: "اللغة:", opt_it: "الإيطالية", opt_en: "الإنجليزية", opt_ar: "العربية",
+brand_subtitle: "جستي دوموس", nav_home: "الرئيسية", nav_about: "من نحن",
+address_btn: "العناوين", nav_results: "أعمالنا ونتائجنا", contact_btn: "تواصل معنا",
+page_title: "خدمات إيطاليا",
+page_subtitle: "استعرض هنا تفاصيل الملفات والخدمات المنجزة في إيطاليا (عقود عمل، إقامات، وقبول دراسي).",
+card_1_title: "عقود العمل في إيطاليا", card_1_list: "<li>متابعة إجراءات استخراج التوظيف</li><li>تنسيق مواعيد السفارة والقنصلية</li><li>مراجعة وتوثيق عقود العمل</li>",
+card_2_title: "إقامات وتصاريح إيطاليا", card_2_list: "<li>تجديد تصاريح الإقامة المختلفة</li><li>إجراءات لم شمل العائلة</li><li>تأمين الأوضاع والمعاملات البيروقراطية</li>",
+card_3_title: "القبول الدراسي والجامعي", card_3_list: "<li>الحصول على قبولات الجامعات الإيطالية</li><li>تنسيق ملفات التسجيل والدراسة</li>",
+back_btn: "العودة لصفحة النتائج", footer_brand_desc: "خدمات مهنية في أوروبا"
 }
 };
 
 function changeLanguage(lang) {
 const root = document.getElementById('html-root');
 if (lang === 'ar') {
-root.setAttribute('dir', 'rtl');
-root.setAttribute('lang', 'ar');
+root.setAttribute('dir', 'rtl'); root.setAttribute('lang', 'ar');
 } else {
-root.setAttribute('dir', 'ltr');
-root.setAttribute('lang', lang);
+root.setAttribute('dir', 'ltr'); root.setAttribute('lang', lang);
 }
-
 document.querySelectorAll('[data-translate]').forEach(element => {
 const key = element.getAttribute('data-translate');
 if (translations[lang] && translations[lang][key]) {
 element.innerHTML = translations[lang][key];
 }
 });
-
-const label = document.getElementById('lang-label');
-
-Studio Europa:
-if (label && translations[lang]) {
-label.textContent = translations[lang].lang_label;
-}
-
+document.getElementById('lang-label').textContent = translations[lang].lang_label;
 document.getElementById('opt-it').textContent = translations[lang].opt_it;
 document.getElementById('opt-en').textContent = translations[lang].opt_en;
 document.getElementById('opt-ar').textContent = translations[lang].opt_ar;
-
 localStorage.setItem('selected_lang', lang);
 }
 
@@ -284,14 +209,3 @@ changeLanguage(savedLang);
 </script>
 </body>
 </html>
-<a href="work-contracts/work-contracts.html" style="text-decoration: none; color: inherit; display: block;">
-<div class="card"> <!-- أو الفئة (Class) الخاصة بالمربع عندك -->
-<div class="card-icon">💼</div>
-<h3>عقود العمل في إيطاليا</h3>
-<ul>
-<li>متابعة إجراءات استخراج التوظيف</li>
-<li>تنسيق مواعيد السفارة والقنصلية</li>
-<li>مراجعة وتوثيق عقود العمل</li>
-</ul>
-</div>
-</a>
